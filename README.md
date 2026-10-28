@@ -19,11 +19,11 @@ Use the raw links below to access the generated configuration files.
 
 | Output | Format | Link |
 |---|---|---|
-| Xray Tested Configurations | TXT | [Open Subscription](https://raw.githubusercontent.com/javadz501/SUB/main/configs/proxy_configs_tested.txt) |
-| sing-box Tested Configurations | JSON | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB/main/configs/singbox_configs_tested.json) |
-| sing-box Secure Configurations | JSON | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB/main/configs/singbox_configs_secure.json) |
-| Clash Tested Configurations | YAML | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB/main/configs/clash_configs_tested.yaml) |
-| Clash Secure Configurations | YAML | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB/main/configs/clash_configs_secure.yaml) |
+| Xray Tested Configurations | TXT | [Open Subscription](https://raw.githubusercontent.com/javadz501/SUB-Independent/main/configs/proxy_configs_tested.txt) |
+| sing-box Tested Configurations | JSON | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB-Independent/main/configs/singbox_configs_tested.json) |
+| sing-box Secure Configurations | JSON | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB-Independent/main/configs/singbox_configs_secure.json) |
+| Clash Tested Configurations | YAML | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB-Independent/main/configs/clash_configs_tested.yaml) |
+| Clash Secure Configurations | YAML | [Open Configurations](https://raw.githubusercontent.com/javadz501/SUB-Independent/main/configs/clash_configs_secure.yaml) |
 
 **Note:** These links depend on the output files being present on the `main` branch. Availability and compatibility may vary between updates and clients.
 
@@ -31,7 +31,7 @@ Use the raw links below to access the generated configuration files.
 
 SUB uses GitHub Actions to collect and process configurations automatically.
 
-To inspect recent runs and their results, visit the [Actions page](https://github.com/javadz501/SUB/actions).
+To inspect recent runs and their results, visit the [Actions page](https://github.com/javadz501/SUB-Independent/actions).
 
 The update schedule is controlled by the repository's workflow configuration and may change over time.
 
