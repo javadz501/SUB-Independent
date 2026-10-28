@@ -2,7 +2,7 @@
   <img src="https://raw.githubusercontent.com/javadz501/SUB-Independent/main/SUB-Independent.png" alt="SUB Logo" width="220">
 </p>
 
-<h1 align="center">SUB — Free Proxy Configuration Collector</h1>
+<h1 align="center">「SUB」- Free Proxy Configuration Collector</h1>
 
 <p align="center">
   <strong>Collect. Test. Publish.</strong>
@@ -24,7 +24,7 @@
 
 ## ⚡ Overview
 
-**SUB** is an automated pipeline that collects publicly available proxy configurations, tests supported protocols, filters results, and publishes organized configuration files.
+**「SUB」** is an automated pipeline that collects publicly available proxy configurations, tests supported protocols, filters results, and publishes organized configuration files.
 
 The goal is simple: **collect useful configurations, validate what can be tested, and make the results easy to access.**
 
@@ -142,7 +142,7 @@ Use trusted services and appropriate end-to-end encryption whenever possible.
 
 ## 📜 License & Attribution
 
-SUB is based on an upstream project. Original license conditions, copyright notices, and required attribution must be preserved.
+「SUB」 is based on an upstream project. Original license conditions, copyright notices, and required attribution must be preserved.
 
 See the [`LICENSE`](https://github.com/javadz501/SUB-Independent/blob/main/LICENSE) file for the applicable terms.
 
@@ -159,7 +159,7 @@ See the [`LICENSE`](https://github.com/javadz501/SUB-Independent/blob/main/LICEN
 ---
 
 <p align="center">
-  <strong>SUB</strong>
+  <strong>「SUB」</strong>
   <br>
   <sub>Collect. Test. Publish.</sub>
   <br><br>
