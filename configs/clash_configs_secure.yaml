@@ -241,6 +241,20 @@
       ]
     },
     {
+      "name": "Trojan 🇺🇸 TLS [443] #9",
+      "type": "trojan",
+      "server": "216.152.156.212",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
       "name": "Trojan 🇺🇸 TLS [443] #10",
       "type": "trojan",
       "server": "216.152.156.42",
@@ -255,26 +269,12 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #11",
-      "type": "trojan",
-      "server": "216.152.156.49",
-      "port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
-      "skip-cert-verify": false,
-      "client-fingerprint": "chrome",
-      "alpn": [
-        "h2",
-        "http/1.1"
-      ]
-    },
-    {
       "name": "Trojan 🇺🇸 TLS [443] #12",
       "type": "trojan",
-      "server": "216.152.156.65",
+      "server": "216.152.156.81",
       "port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+      "sni": "www.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
       "skip-cert-verify": false,
       "client-fingerprint": "chrome",
       "alpn": [
@@ -551,10 +551,10 @@
     {
       "name": "Trojan 🇪🇸 TLS [443] #32",
       "type": "trojan",
-      "server": "66.163.118.251",
+      "server": "66.163.118.244",
       "port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "resources.discovergreatjobsandadvanceyourcareer.com",
+      "sni": "api.discovergreatjobsandadvanceyourcareer.com",
       "skip-cert-verify": false,
       "client-fingerprint": "chrome",
       "alpn": [
@@ -565,10 +565,10 @@
     {
       "name": "Trojan 🇪🇸 TLS [443] #33",
       "type": "trojan",
-      "server": "66.163.118.62",
+      "server": "66.163.118.251",
       "port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "courses.discovergreatjobsandadvanceyourcareer.com",
+      "sni": "resources.discovergreatjobsandadvanceyourcareer.com",
       "skip-cert-verify": false,
       "client-fingerprint": "chrome",
       "alpn": [
@@ -633,7 +633,15 @@
       ]
     },
     {
-      "name": "SS 🇵🇱 AEAD [443] #1",
+      "name": "SS 🇳🇱 AEAD [8080] #1",
+      "type": "ss",
+      "server": "193.29.139.234",
+      "port": 8080,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "4a2rfixophdjffa8KVA4Aa"
+    },
+    {
+      "name": "SS 🇵🇱 AEAD [443] #2",
       "type": "ss",
       "server": "54.36.174.134",
       "port": 443,
@@ -641,7 +649,7 @@
       "password": "6heexyz"
     },
     {
-      "name": "SS 🇵🇱 AEAD [443] #2",
+      "name": "SS 🇵🇱 AEAD [443] #3",
       "type": "ss",
       "server": "pl134.vpnbook.com",
       "port": 443,
@@ -649,7 +657,7 @@
       "password": "6heexyz"
     },
     {
-      "name": "SS 🇵🇱 AEAD [443] #3",
+      "name": "SS 🇵🇱 AEAD [443] #4",
       "type": "ss",
       "server": "pl140.vpnbook.com",
       "port": 443,
@@ -657,7 +665,7 @@
       "password": "6heexyz"
     },
     {
-      "name": "SS 🇫🇮 AEAD [8388] #4",
+      "name": "SS 🇫🇮 AEAD [8388] #5",
       "type": "ss",
       "server": "ams1.rvpn.app",
       "port": 8388,
@@ -702,8 +710,8 @@
         "Trojan 🇺🇸 TLS [443] #6",
         "Trojan 🇺🇸 TLS [443] #7",
         "Trojan 🇺🇸 TLS [443] #8",
+        "Trojan 🇺🇸 TLS [443] #9",
         "Trojan 🇺🇸 TLS [443] #10",
-        "Trojan 🇺🇸 TLS [443] #11",
         "Trojan 🇺🇸 TLS [443] #12",
         "Trojan 🇧🇷 TLS [443] #13",
         "Trojan 🇦🇺 TLS [443] #14",
@@ -730,10 +738,11 @@
         "Trojan 🇺🇸 TLS [443] #35",
         "Trojan 🇺🇸 TLS [443] #36",
         "Trojan 🇺🇸 TLS [443] #37",
-        "SS 🇵🇱 AEAD [443] #1",
+        "SS 🇳🇱 AEAD [8080] #1",
         "SS 🇵🇱 AEAD [443] #2",
         "SS 🇵🇱 AEAD [443] #3",
-        "SS 🇫🇮 AEAD [8388] #4",
+        "SS 🇵🇱 AEAD [443] #4",
+        "SS 🇫🇮 AEAD [8388] #5",
         "Hysteria2 🇺🇸 QUIC [443] #10",
         "Hysteria2 🇳🇱 QUIC+OBFS [8443] #44",
         "DIRECT"
@@ -754,8 +763,8 @@
         "Trojan 🇺🇸 TLS [443] #6",
         "Trojan 🇺🇸 TLS [443] #7",
         "Trojan 🇺🇸 TLS [443] #8",
+        "Trojan 🇺🇸 TLS [443] #9",
         "Trojan 🇺🇸 TLS [443] #10",
-        "Trojan 🇺🇸 TLS [443] #11",
         "Trojan 🇺🇸 TLS [443] #12",
         "Trojan 🇧🇷 TLS [443] #13",
         "Trojan 🇦🇺 TLS [443] #14",
@@ -782,10 +791,11 @@
         "Trojan 🇺🇸 TLS [443] #35",
         "Trojan 🇺🇸 TLS [443] #36",
         "Trojan 🇺🇸 TLS [443] #37",
-        "SS 🇵🇱 AEAD [443] #1",
+        "SS 🇳🇱 AEAD [8080] #1",
         "SS 🇵🇱 AEAD [443] #2",
         "SS 🇵🇱 AEAD [443] #3",
-        "SS 🇫🇮 AEAD [8388] #4",
+        "SS 🇵🇱 AEAD [443] #4",
+        "SS 🇫🇮 AEAD [8388] #5",
         "Hysteria2 🇺🇸 QUIC [443] #10",
         "Hysteria2 🇳🇱 QUIC+OBFS [8443] #44"
       ],

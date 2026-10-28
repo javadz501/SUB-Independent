@@ -364,6 +364,32 @@
       "settings": {
         "servers": [
           {
+            "address": "216.152.156.212",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "courses.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      }
+    },
+    {
+      "tag": "proxy-13",
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
             "address": "216.152.156.42",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -385,38 +411,12 @@
       }
     },
     {
-      "tag": "proxy-13",
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "216.152.156.49",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cdn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      }
-    },
-    {
       "tag": "proxy-14",
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "216.152.156.65",
+            "address": "216.152.156.81",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -427,7 +427,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+          "serverName": "www.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
           "fingerprint": "chrome",
           "alpn": [
             "h2",
@@ -936,7 +936,7 @@
       "settings": {
         "servers": [
           {
-            "address": "66.163.118.251",
+            "address": "66.163.118.244",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -947,7 +947,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "resources.discovergreatjobsandadvanceyourcareer.com",
+          "serverName": "api.discovergreatjobsandadvanceyourcareer.com",
           "fingerprint": "chrome",
           "alpn": [
             "h2",
@@ -962,7 +962,7 @@
       "settings": {
         "servers": [
           {
-            "address": "66.163.118.62",
+            "address": "66.163.118.251",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -973,7 +973,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "courses.discovergreatjobsandadvanceyourcareer.com",
+          "serverName": "resources.discovergreatjobsandadvanceyourcareer.com",
           "fingerprint": "chrome",
           "alpn": [
             "h2",
@@ -1092,10 +1092,10 @@
       "settings": {
         "servers": [
           {
-            "address": "54.36.174.134",
-            "port": 443,
+            "address": "193.29.139.234",
+            "port": 8080,
             "method": "chacha20-ietf-poly1305",
-            "password": "6heexyz",
+            "password": "4a2rfixophdjffa8KVA4Aa",
             "level": 8
           }
         ]
@@ -1110,7 +1110,7 @@
       "settings": {
         "servers": [
           {
-            "address": "pl134.vpnbook.com",
+            "address": "54.36.174.134",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "6heexyz",
@@ -1128,7 +1128,7 @@
       "settings": {
         "servers": [
           {
-            "address": "pl140.vpnbook.com",
+            "address": "pl134.vpnbook.com",
             "port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "6heexyz",
@@ -1142,6 +1142,24 @@
     },
     {
       "tag": "proxy-43",
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "pl140.vpnbook.com",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "6heexyz",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      }
+    },
+    {
+      "tag": "proxy-44",
       "protocol": "shadowsocks",
       "settings": {
         "servers": [

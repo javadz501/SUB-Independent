@@ -1682,7 +1682,7 @@
       "settings": {
         "servers": [
           {
-            "address": "216.152.156.65",
+            "address": "216.152.156.81",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -1693,7 +1693,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "learn.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+          "serverName": "www.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
           "fingerprint": "unsafe",
           "alpn": [
             "h2",
@@ -2882,7 +2882,7 @@
       "settings": {
         "servers": [
           {
-            "address": "66.163.118.251",
+            "address": "66.163.118.244",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -2893,7 +2893,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "resources.discovergreatjobsandadvanceyourcareer.com",
+          "serverName": "api.discovergreatjobsandadvanceyourcareer.com",
           "fingerprint": "unsafe",
           "alpn": [
             "h2",
@@ -2942,7 +2942,7 @@
       "settings": {
         "servers": [
           {
-            "address": "66.163.118.62",
+            "address": "66.163.118.251",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -2953,7 +2953,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "courses.discovergreatjobsandadvanceyourcareer.com",
+          "serverName": "resources.discovergreatjobsandadvanceyourcareer.com",
           "fingerprint": "unsafe",
           "alpn": [
             "h2",
@@ -3238,34 +3238,20 @@
       "tag": "proxy-52"
     },
     {
-      "protocol": "trojan",
+      "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "104.21.65.43",
-            "port": 2087,
-            "password": "0y7hid61k3k2vuy1",
+            "address": "193.29.139.234",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "4a2rfixophdjffa8KVA4Aa",
             "level": 8
           }
         ]
       },
       "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-          "headers": {
-            "Host": "uwu.dianaw.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "uwu.dianaw.cc.cd",
-          "fingerprint": "unsafe",
-          "alpn": [
-            "h2"
-          ],
-          "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-        },
+        "network": "tcp",
         "finalmask": {
           "tcp": [
             {
@@ -3301,71 +3287,6 @@
         }
       },
       "tag": "proxy-53"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "uwu.blueknightnet.qzz.io",
-            "port": 2087,
-            "password": "0y7hid61k3k2vuy1",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "ws",
-        "security": "tls",
-        "wsSettings": {
-          "path": "/@BlueKnight_net--@BlueKnight_net--@BlueKnight_net",
-          "headers": {
-            "Host": "uwu.dianaw.cc.cd"
-          }
-        },
-        "tlsSettings": {
-          "serverName": "uwu.dianaw.cc.cd",
-          "fingerprint": "unsafe",
-          "alpn": [
-            "h2"
-          ],
-          "cipherSuites": "TLS_AES_256_GCM_SHA384:TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384:TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256:TLS_ECDHE_ECDSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_RSA_WITH_CHACHA20_POLY1305_SHA256:TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA:TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256:TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256"
-        },
-        "finalmask": {
-          "tcp": [
-            {
-              "type": "fragment",
-              "settings": {
-                "packets": "tlshello",
-                "lengths": [
-                  0,
-                  80,
-                  1
-                ],
-                "delays": [
-                  "0"
-                ],
-                "maxSplit": "0"
-              }
-            },
-            {
-              "type": "fragment",
-              "settings": {
-                "packets": "1-1",
-                "lengths": [
-                  50,
-                  1
-                ],
-                "delays": [
-                  "3"
-                ],
-                "maxSplit": "40"
-              }
-            }
-          ]
-        }
-      },
-      "tag": "proxy-54"
     },
     {
       "protocol": "shadowsocks",
@@ -3416,7 +3337,7 @@
           ]
         }
       },
-      "tag": "proxy-55"
+      "tag": "proxy-54"
     },
     {
       "protocol": "shadowsocks",
@@ -3467,7 +3388,7 @@
           ]
         }
       },
-      "tag": "proxy-56"
+      "tag": "proxy-55"
     },
     {
       "protocol": "shadowsocks",
@@ -3518,7 +3439,7 @@
           ]
         }
       },
-      "tag": "proxy-57"
+      "tag": "proxy-56"
     },
     {
       "protocol": "shadowsocks",
@@ -3569,7 +3490,7 @@
           ]
         }
       },
-      "tag": "proxy-58"
+      "tag": "proxy-57"
     },
     {
       "protocol": "freedom",
