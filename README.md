@@ -140,6 +140,14 @@ Public proxy configurations are provided on an **as-is** basis.
 
 Use trusted services and appropriate end-to-end encryption whenever possible.
 
+## 🙏 Acknowledgments
+
+「SUB」 builds upon the work started by the original [Multi Proxy Config Fetcher](https://github.com/4n0nymou3/multi-proxy-config-fetcher) project by [@4n0nymou3](https://github.com/4n0nymou3).
+
+This repository is maintained independently, with its own configuration, automation, and project-specific changes.
+
+Full credit goes to the original author for the foundational work. Please refer to the original repository and its license for the upstream project's terms.
+
 ## 📜 License & Attribution
 
 「SUB」 is based on an upstream project. Original license conditions, copyright notices, and required attribution must be preserved.
