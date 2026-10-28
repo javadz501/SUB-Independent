@@ -71,7 +71,7 @@ Refresh the subscription periodically to retrieve the latest published configura
 
 ## ⚙️ Automated Pipeline
 
-SUB uses GitHub Actions to automate configuration processing.
+「SUB」 uses GitHub Actions to automate configuration processing.
 
 ```text
 Public Sources
