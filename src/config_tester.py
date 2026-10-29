@@ -357,18 +357,8 @@ def main():
     output_file = sys.argv[2]
 
     if not config_settings.ENABLE_CONFIG_TESTER:
-        logger.info("Config testing is disabled in user_settings.py. Skipping.")
-        try:
-            with open(input_file, 'r', encoding='utf-8') as f_in:
-                config_data = json.load(f_in)
-            os.makedirs(os.path.dirname(output_file) or '.', exist_ok=True)
-            with open(output_file, 'w', encoding='utf-8') as f_out:
-                json.dump(config_data, f_out, indent=4, ensure_ascii=False)
-            logger.info(f"Copied {input_file} to {output_file} as testing is disabled.")
-            sys.exit(0)
-        except Exception as e:
-            logger.error(f"Failed to copy {input_file} to {output_file}: {str(e)}")
-            sys.exit(1)
+        logger.error("Config testing is disabled in user_settings.py; refusing to label untested configs as tested.")
+        sys.exit(2)
 
     max_workers = config_settings.TESTER_MAX_WORKERS
     timeout = config_settings.TESTER_TIMEOUT_SECONDS
@@ -417,13 +407,8 @@ def main():
         logger.info(f"Saved {len(working)} working configs to {output_file}")
         sys.exit(0)
     else:
-        logger.error("No working configs found - saving original config")
-
-        os.makedirs(os.path.dirname(output_file) or '.', exist_ok=True)
-        with open(output_file, 'w', encoding='utf-8') as f:
-            json.dump(config, f, indent=4, ensure_ascii=False)
-
-        sys.exit(0)
+        logger.error("No working configs found; refusing to write untested input as tested output.")
+        sys.exit(2)
 
 
 if __name__ == '__main__':
