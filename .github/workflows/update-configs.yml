@@ -2,22 +2,38 @@ name: Update Proxy Configs
 
 on:
   schedule:
-    - cron: '30 20 * * *'  # 00:00 Tehran
+    - cron: '30 20 * * *' # 00:00 Tehran
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: update-proxy-configs
+  cancel-in-progress: false
+
 jobs:
   update-configs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    env:
+      PIPELINE_DIR: ${{ runner.temp }}/sub-independent-pipeline
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: Ensure workflow runs on main
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          if [[ "$GITHUB_REF" != "refs/heads/main" ]]; then
+            echo "This workflow must run on the main branch; got: $GITHUB_REF" >&2
+            exit 1
+          fi
 
       - name: Set up Python
         uses: actions/setup-python@v6
@@ -25,284 +41,354 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies
+        shell: bash
         run: |
+          set -Eeuo pipefail
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          python -m pip install -r requirements.txt
+          sudo apt-get update
+          sudo apt-get install -y jq unzip
 
       - name: Install Xray with retry
+        shell: bash
         run: |
+          set -Eeuo pipefail
           MAX_RETRIES=3
-          RETRY_COUNT=0
+          FALLBACK_VERSION="v26.3.27"
 
           install_xray() {
-            echo "Attempting to install Xray (Attempt $((RETRY_COUNT + 1))/$MAX_RETRIES)..."
+            local url
+            url="$(curl --fail --silent --show-error --location --retry 3 \
+              https://api.github.com/repos/XTLS/Xray-core/releases/latest |
+              jq -er '[.assets[]? | select(.name == "Xray-linux-64.zip")][0].browser_download_url')" || url=""
 
-            LATEST_URL=$(curl -sL "https://api.github.com/repos/XTLS/Xray-core/releases" | jq -r '[.[] | select(.draft==false)] | sort_by(.published_at) | last | .assets[]? | select(.name=="Xray-linux-64.zip") | .browser_download_url')
+            local candidates=()
+            [[ -n "$url" ]] && candidates+=("$url")
+            candidates+=("https://github.com/XTLS/Xray-core/releases/download/${FALLBACK_VERSION}/Xray-linux-64.zip")
 
-            if [ -z "$LATEST_URL" ] || [ "$LATEST_URL" = "null" ]; then
-              echo "Failed to fetch Xray download URL from GitHub API"
-              return 1
-            fi
-
-            echo "Download URL: $LATEST_URL"
-
-            if ! wget -q --timeout=30 --tries=3 -O xray.zip "$LATEST_URL"; then
-              echo "Failed to download Xray"
-              return 1
-            fi
-
-            if [ ! -s xray.zip ]; then
-              echo "Downloaded file is missing or empty"
-              return 1
-            fi
-
-            if ! unzip -o xray.zip xray geoip.dat geosite.dat; then
-              echo "Failed to extract Xray"
-              rm -f xray.zip
-              return 1
-            fi
-
-            sudo mv xray /usr/local/bin/
-            sudo chmod +x /usr/local/bin/xray
-
-            if ! xray version; then
-              echo "Xray installation verification failed"
-              return 1
-            fi
-
-            rm -f xray.zip geoip.dat geosite.dat LICENSE
-            echo "Xray installed successfully"
-            return 0
+            local candidate
+            for candidate in "${candidates[@]}"; do
+              rm -f xray.zip xray geoip.dat geosite.dat
+              if ! curl --fail --silent --show-error --location --retry 3 --max-time 90 -o xray.zip "$candidate"; then
+                echo "Xray download failed; trying next candidate if available." >&2
+                continue
+              fi
+              if ! unzip -o xray.zip xray geoip.dat geosite.dat; then
+                echo "Xray archive extraction failed." >&2
+                continue
+              fi
+              sudo install -m 0755 xray /usr/local/bin/xray
+              if xray version; then
+                rm -f xray.zip xray geoip.dat geosite.dat LICENSE
+                return 0
+              fi
+            done
+            return 1
           }
 
-          while [ "$RETRY_COUNT" -lt "$MAX_RETRIES" ]; do
-            if install_xray; then
-              echo "Xray installation successful"
-              exit 0
-            else
-              RETRY_COUNT=$((RETRY_COUNT + 1))
-              if [ "$RETRY_COUNT" -lt "$MAX_RETRIES" ]; then
-                echo "Retrying in 30 seconds..."
-                sleep 30
-              fi
+          attempt=1
+          until install_xray; do
+            if (( attempt >= MAX_RETRIES )); then
+              echo "Unable to install and verify Xray after ${MAX_RETRIES} attempts." >&2
+              exit 1
             fi
+            attempt=$((attempt + 1))
+            sleep 15
           done
-
-          echo "Failed to install Xray after $MAX_RETRIES attempts"
-          echo "Trying fallback method with hardcoded version..."
-
-          FALLBACK_VERSION="v26.3.27"
-          FALLBACK_URL="https://github.com/XTLS/Xray-core/releases/download/${FALLBACK_VERSION}/Xray-linux-64.zip"
-
-          echo "Using fallback URL: $FALLBACK_URL"
-
-          if wget -q --timeout=30 --tries=3 -O xray.zip "$FALLBACK_URL" && \
-             unzip -o xray.zip xray geoip.dat geosite.dat && \
-             sudo mv xray /usr/local/bin/ && \
-             sudo chmod +x /usr/local/bin/xray && \
-             xray version; then
-            rm -f xray.zip geoip.dat geosite.dat LICENSE
-            echo "Xray installed successfully using fallback method"
-            exit 0
-          else
-            echo "Fallback Xray installation also failed"
-            exit 1
-          fi
 
       - name: Install sing-box with retry
+        shell: bash
         run: |
+          set -Eeuo pipefail
           MAX_RETRIES=3
-          RETRY_COUNT=0
+          FALLBACK_VERSION="1.14.0"
 
           install_singbox() {
-            echo "Attempting to install sing-box (Attempt $((RETRY_COUNT + 1))/$MAX_RETRIES)..."
+            local url
+            url="$(curl --fail --silent --show-error --location --retry 3 \
+              https://api.github.com/repos/SagerNet/sing-box/releases/latest |
+              jq -er '[.assets[]? | select(.name | endswith("_linux_amd64.deb"))][0].browser_download_url')" || url=""
 
-            LATEST_URL=$(curl -sL "https://api.github.com/repos/SagerNet/sing-box/releases/latest" | jq -r '.assets[] | select(.name | endswith("_linux_amd64.deb")) | .browser_download_url' | head -n 1)
+            local candidates=()
+            [[ -n "$url" ]] && candidates+=("$url")
+            candidates+=("https://github.com/SagerNet/sing-box/releases/download/v${FALLBACK_VERSION}/sing-box_${FALLBACK_VERSION}_linux_amd64.deb")
 
-            if [ -z "$LATEST_URL" ] || [ "$LATEST_URL" = "null" ]; then
-              echo "Failed to fetch sing-box download URL from GitHub API"
-              return 1
-            fi
-
-            echo "Download URL: $LATEST_URL"
-
-            if ! wget -q --timeout=30 --tries=3 -O sing-box.deb "$LATEST_URL"; then
-              echo "Failed to download sing-box"
-              return 1
-            fi
-
-            if [ ! -s sing-box.deb ]; then
-              echo "Downloaded file is missing or empty"
-              return 1
-            fi
-
-            if ! sudo dpkg -i sing-box.deb; then
-              echo "Failed to install sing-box package"
-              sudo apt-get install -f -y
-              return 1
-            fi
-
-            sudo apt-get install -f -y
-            rm -f sing-box.deb
-            echo "sing-box installed successfully"
-            return 0
+            local candidate
+            for candidate in "${candidates[@]}"; do
+              rm -f sing-box.deb
+              if ! curl --fail --silent --show-error --location --retry 3 --max-time 90 -o sing-box.deb "$candidate"; then
+                echo "sing-box download failed; trying next candidate if available." >&2
+                continue
+              fi
+              if sudo apt-get install -y ./sing-box.deb && sing-box version; then
+                rm -f sing-box.deb
+                return 0
+              fi
+            done
+            return 1
           }
 
-          while [ "$RETRY_COUNT" -lt "$MAX_RETRIES" ]; do
-            if install_singbox; then
-              echo "sing-box installation successful"
-              exit 0
-            else
-              RETRY_COUNT=$((RETRY_COUNT + 1))
-              if [ "$RETRY_COUNT" -lt "$MAX_RETRIES" ]; then
-                echo "Retrying in 30 seconds..."
-                sleep 30
-              fi
+          attempt=1
+          until install_singbox; do
+            if (( attempt >= MAX_RETRIES )); then
+              echo "Unable to install and verify sing-box after ${MAX_RETRIES} attempts." >&2
+              exit 1
+            fi
+            attempt=$((attempt + 1))
+            sleep 15
+          done
+
+      - name: Prepare isolated pipeline workspace
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          test -f src/fetch_configs.py
+          test -f settings/user_settings.py
+          mkdir -p "$PIPELINE_DIR"
+          tar --exclude='./.git' -cf - . | tar -xf - -C "$PIPELINE_DIR"
+
+          cd "$PIPELINE_DIR"
+          mkdir -p assets configs
+
+          # Remove generated files from the isolated copy only. The checked-out
+          # published files remain untouched until every required output passes.
+          rm -f \
+            configs/proxy_configs.txt \
+            configs/proxy_configs_tested.txt \
+            configs/singbox_configs_all.json \
+            configs/singbox_configs_tested.json \
+            configs/singbox_configs_secure.json \
+            configs/clash_configs_all.yaml \
+            configs/clash_configs_tested.yaml \
+            configs/clash_configs_secure.yaml \
+            configs/xray_loadbalanced_config.json \
+            configs/xray_fragment_loadbalanced_config.json \
+            configs/xray_secure_loadbalanced_config.json \
+            configs/channel_stats.json \
+            configs/location_cache.json
+          rm -rf configs/location
+          rm -f assets/channel_stats_chart.svg assets/performance_report.html
+
+      - name: Run pipeline and validate fresh outputs
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          cd "$PIPELINE_DIR"
+
+          python src/fetch_configs.py
+          test -s configs/proxy_configs.txt || {
+            echo "Fetch stage produced no fresh proxy_configs.txt; refusing to publish." >&2
+            exit 1
+          }
+          python - <<'PY'
+          from pathlib import Path
+          p = Path('configs/proxy_configs.txt')
+          entries = [line.strip() for line in p.read_text(encoding='utf-8').splitlines()
+                     if line.strip() and not line.lstrip().startswith('//') and not line.lstrip().startswith('#')]
+          if not entries:
+              raise SystemExit('Fetcher produced a header-only file; refusing to publish.')
+          print(f'Fetcher produced {len(entries)} candidate lines.')
+          PY
+          test -s configs/channel_stats.json || {
+            echo "Fetch stage did not produce fresh channel statistics." >&2
+            exit 1
+          }
+          python -m json.tool configs/channel_stats.json > /dev/null
+
+          python src/enrich_configs.py configs/proxy_configs.txt configs/location_cache.json
+          python src/rename_configs.py configs/location_cache.json configs/proxy_configs.txt configs/proxy_configs.txt
+          test -s configs/proxy_configs.txt || {
+            echo "Enrichment/rename stage produced an empty input." >&2
+            exit 1
+          }
+
+          python src/xray_config_tester.py configs/proxy_configs.txt configs/proxy_configs_tested.txt 2>&1 | tee xray-test.log
+          if grep -Fq "No working configs found" xray-test.log; then
+            echo "Xray tester found no working configs; refusing to publish fallback input." >&2
+            exit 1
+          fi
+          test -s configs/proxy_configs_tested.txt || {
+            echo "Xray test stage produced no tested configs." >&2
+            exit 1
+          }
+          cp configs/proxy_configs_tested.txt configs/proxy_configs.txt
+
+          python src/country_splitter.py configs/proxy_configs_tested.txt configs/location_cache.json configs/location
+
+          python src/config_to_singbox.py
+          test -s configs/singbox_configs_all.json
+          python -m json.tool configs/singbox_configs_all.json > /dev/null
+
+          python src/config_tester.py configs/singbox_configs_all.json configs/singbox_configs_tested.json 2>&1 | tee singbox-test.log
+          if grep -Fq "No working configs found" singbox-test.log; then
+            echo "sing-box tester found no working configs; refusing to publish fallback input." >&2
+            exit 1
+          fi
+          test -s configs/singbox_configs_tested.json || {
+            echo "sing-box test stage produced no tested configs." >&2
+            exit 1
+          }
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path('configs/singbox_configs_tested.json')
+          data = json.loads(p.read_text(encoding='utf-8'))
+          outbounds = data.get('outbounds') if isinstance(data, dict) else None
+          if not isinstance(outbounds, list):
+              raise SystemExit('sing-box tested output has no outbounds list')
+          excluded = {'selector', 'urltest', 'direct', 'block', 'dns'}
+          proxies = [item for item in outbounds if isinstance(item, dict) and item.get('type') not in excluded]
+          if not proxies:
+              raise SystemExit('sing-box tested output contains no proxy outbounds')
+          print(f'Validated {len(proxies)} tested sing-box proxy outbounds.')
+          PY
+          cp configs/singbox_configs_tested.json configs/singbox_configs_all.json
+
+          python src/security_filter.py
+          python src/singbox_to_clash.py
+          python src/xray_balancer.py
+          python src/xray_fragment_balancer.py
+
+          # Required generated outputs must be fresh and structurally valid.
+          required_files=(
+            configs/proxy_configs.txt
+            configs/proxy_configs_tested.txt
+            configs/location_cache.json
+            configs/singbox_configs_all.json
+            configs/singbox_configs_tested.json
+            configs/singbox_configs_secure.json
+            configs/clash_configs_all.yaml
+            configs/clash_configs_tested.yaml
+            configs/clash_configs_secure.yaml
+            configs/xray_loadbalanced_config.json
+            configs/xray_fragment_loadbalanced_config.json
+            configs/xray_secure_loadbalanced_config.json
+            configs/channel_stats.json
+          )
+          for file in "${required_files[@]}"; do
+            if [[ ! -s "$file" ]]; then
+              echo "Required output is missing or empty: $file" >&2
+              exit 1
             fi
           done
 
-          echo "Failed to install sing-box after $MAX_RETRIES attempts"
-          echo "Trying fallback method with hardcoded version..."
+          for file in \
+            configs/location_cache.json \
+            configs/singbox_configs_all.json \
+            configs/singbox_configs_tested.json \
+            configs/singbox_configs_secure.json \
+            configs/xray_loadbalanced_config.json \
+            configs/xray_fragment_loadbalanced_config.json \
+            configs/xray_secure_loadbalanced_config.json \
+            configs/channel_stats.json; do
+            python -m json.tool "$file" > /dev/null
+          done
 
-          FALLBACK_VERSION="1.14.0"
-          FALLBACK_URL="https://github.com/SagerNet/sing-box/releases/download/v${FALLBACK_VERSION}/sing-box_${FALLBACK_VERSION}_linux_amd64.deb"
+          python src/generate_charts.py
+          test -s assets/channel_stats_chart.svg
+          test -s assets/performance_report.html
 
-          echo "Using fallback URL: $FALLBACK_URL"
+      - name: Publish validated outputs to repository workspace
+        shell: bash
+        run: |
+          set -Eeuo pipefail
+          cd "$PIPELINE_DIR"
 
-          if wget -q --timeout=30 --tries=3 -O sing-box.deb "$FALLBACK_URL" && \
-             sudo dpkg -i sing-box.deb; then
-            sudo apt-get install -f -y
-            rm -f sing-box.deb
-            echo "sing-box installed successfully using fallback method"
-            exit 0
+          # Copy only known generated files; never stage the entire workspace.
+          files=(
+            configs/proxy_configs.txt
+            configs/proxy_configs_tested.txt
+            configs/location_cache.json
+            configs/singbox_configs_all.json
+            configs/singbox_configs_tested.json
+            configs/singbox_configs_secure.json
+            configs/clash_configs_all.yaml
+            configs/clash_configs_tested.yaml
+            configs/clash_configs_secure.yaml
+            configs/xray_loadbalanced_config.json
+            configs/xray_fragment_loadbalanced_config.json
+            configs/xray_secure_loadbalanced_config.json
+            configs/channel_stats.json
+            assets/channel_stats_chart.svg
+            assets/performance_report.html
+          )
+          for file in "${files[@]}"; do
+            install -D "$file" "$GITHUB_WORKSPACE/$file"
+          done
+
+          # Country outputs are a generated set; replace the set only after validation.
+          if [[ -d configs/location ]]; then
+            find configs/location -type f -print -quit | grep -q . || {
+              echo "Country split produced no files; refusing to replace published country outputs." >&2
+              exit 1
+            }
+            rm -rf "$GITHUB_WORKSPACE/configs/location"
+            mkdir -p "$GITHUB_WORKSPACE/configs/location"
+            cp -a configs/location/. "$GITHUB_WORKSPACE/configs/location/"
           else
-            echo "Fallback sing-box installation also failed"
+            echo "Country split output directory is missing." >&2
             exit 1
           fi
 
-      - name: Create directories
+      - name: Update README cache-busting timestamps
+        shell: bash
         run: |
-          mkdir -p assets
-          mkdir -p configs
-
-      - name: Run config fetcher
-        run: python src/fetch_configs.py
-        continue-on-error: true
-
-      - name: Enrich configs with location data
-        run: python src/enrich_configs.py configs/proxy_configs.txt configs/location_cache.json
-        continue-on-error: true
-
-      - name: Rename configs
-        run: python src/rename_configs.py configs/location_cache.json configs/proxy_configs.txt configs/proxy_configs.txt
-        continue-on-error: true
-
-      - name: Test configs with Xray
-        run: python src/xray_config_tester.py configs/proxy_configs.txt configs/proxy_configs_tested.txt
-        continue-on-error: true
-
-      - name: Replace raw configs with tested configs for default subscription link
-        run: |
-          if [ -s configs/proxy_configs_tested.txt ]; then
-            cp configs/proxy_configs_tested.txt configs/proxy_configs.txt
-          else
-            echo "No tested Xray configs available; preserving the existing raw file."
-          fi
-
-      - name: Split tested configs by country
-        run: python src/country_splitter.py configs/proxy_configs_tested.txt configs/location_cache.json configs/location
-        continue-on-error: true
-
-      - name: Convert configs to sing-box format
-        run: python src/config_to_singbox.py
-
-      - name: Test sing-box configs
-        run: python src/config_tester.py configs/singbox_configs_all.json configs/singbox_configs_tested.json
-        continue-on-error: true
-
-      - name: Replace raw sing-box configs with tested configs for default subscription link
-        run: |
-          if [ -s configs/singbox_configs_tested.json ]; then
-            cp configs/singbox_configs_tested.json configs/singbox_configs_all.json
-          else
-            echo "No tested sing-box configs available; preserving the existing raw file."
-          fi
-
-      - name: Filter insecure configs and generate secure outputs
-        run: python src/security_filter.py
-        continue-on-error: true
-
-      - name: Convert sing-box configs to Clash YAML format
-        run: python src/singbox_to_clash.py
-        continue-on-error: true
-
-      - name: Convert tested configs to Xray format
-        run: python src/xray_balancer.py
-        continue-on-error: true
-
-      - name: Convert tested configs to Xray Fragment format
-        run: python src/xray_fragment_balancer.py
-        continue-on-error: true
-
-      - name: Generate charts and reports
-        run: python src/generate_charts.py
-
-      - name: Generate pipeline run summary
-        run: python src/generate_summary.py
-        if: always()
-
-      - name: Update README timestamps and stats
-        run: |
-          timestamp=$(date +%s)
-
+          set -Eeuo pipefail
+          timestamp="$(date +%s)"
           sed -i "s/channel_stats_chart\.svg?v=[0-9]*/channel_stats_chart.svg?v=$timestamp/" README.md
           sed -i "s/performance_report\.html?v=[0-9]*/performance_report.html?v=$timestamp/" README.md
 
-      - name: Commit and push changes
+      - name: Commit and push validated outputs
+        shell: bash
         run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          set -Eeuo pipefail
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
 
-          git add configs/proxy_configs.txt
-          git add configs/proxy_configs_tested.txt
-          git add configs/location_cache.json
-          git add configs/singbox_configs_all.json
-          git add configs/singbox_configs_tested.json
-          git add configs/singbox_configs_secure.json
-          git add configs/clash_configs_all.yaml
-          git add configs/clash_configs_tested.yaml
-          git add configs/clash_configs_secure.yaml
-          git add configs/xray_loadbalanced_config.json
-          git add configs/xray_fragment_loadbalanced_config.json
-          git add configs/xray_secure_loadbalanced_config.json
-          git add configs/channel_stats.json
-          git add configs/location/
-          git add assets/
-          git add README.md
+          git add -- \
+            configs/proxy_configs.txt \
+            configs/proxy_configs_tested.txt \
+            configs/location_cache.json \
+            configs/singbox_configs_all.json \
+            configs/singbox_configs_tested.json \
+            configs/singbox_configs_secure.json \
+            configs/clash_configs_all.yaml \
+            configs/clash_configs_tested.yaml \
+            configs/clash_configs_secure.yaml \
+            configs/xray_loadbalanced_config.json \
+            configs/xray_fragment_loadbalanced_config.json \
+            configs/xray_secure_loadbalanced_config.json \
+            configs/channel_stats.json \
+            configs/location/ \
+            assets/channel_stats_chart.svg \
+            assets/performance_report.html \
+            README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
+            echo "No validated output changes to commit."
             exit 0
           fi
 
+          echo "Files staged for publication:"
+          git diff --cached --name-only
+          git diff --cached --check
+          git diff --cached --stat
           git commit -m "Update proxy configs, stats and reports"
 
-          max_retries=5
-          retry_count=0
-
-          while [ "$retry_count" -lt "$max_retries" ]; do
-            if git push; then
-              echo "Successfully pushed changes"
+          # Retry only after a clean rebase onto the latest main. A conflict is fatal.
+          for attempt in 1 2 3; do
+            if git push origin HEAD:main; then
+              echo "Successfully pushed validated outputs to main."
               exit 0
-            else
-              retry_count=$((retry_count + 1))
-              if [ "$retry_count" -lt "$max_retries" ]; then
-                echo "Push failed, retrying in 30 seconds... (Attempt $retry_count/$max_retries)"
-                sleep 30
-                git pull --rebase origin main || true
-              fi
             fi
+            if (( attempt == 3 )); then
+              echo "Push failed after ${attempt} attempts." >&2
+              exit 1
+            fi
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Rebase conflict; stopping rather than publishing an uncertain state." >&2
+              exit 1
+            fi
+            sleep 10
           done
-
-          echo "Failed to push after $max_retries attempts"
-          exit 1
