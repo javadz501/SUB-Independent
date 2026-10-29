@@ -78,6 +78,40 @@
   },
   "proxies": [
     {
+      "name": "VLESS 🇺🇸 REALITY+PBK+VISION [443] #2",
+      "type": "vless",
+      "server": "47.253.226.114",
+      "port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "tls": true,
+      "servername": "www.cloudflare.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "reality-opts": {
+        "public-key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "short-id": ""
+      }
+    },
+    {
+      "name": "VLESS 🇺🇸 REALITY+PBK+VISION+UTLS [443] #3",
+      "type": "vless",
+      "server": "47.253.226.114",
+      "port": 443,
+      "uuid": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+      "flow": "xtls-rprx-vision",
+      "network": "tcp",
+      "tls": true,
+      "servername": "www.cloudflare.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "reality-opts": {
+        "public-key": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+        "short-id": ""
+      }
+    },
+    {
       "name": "VLESS 🇫🇮 WS+TLS+UTLS [465] #4",
       "type": "vless",
       "server": "65.109.211.81",
@@ -348,62 +382,6 @@
     {
       "name": "Trojan 🇺🇸 TLS [443] #17",
       "type": "trojan",
-      "server": "66.163.112.13",
-      "port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "blog.unlockyourfuturefindyourperfectcareer.com",
-      "skip-cert-verify": false,
-      "client-fingerprint": "chrome",
-      "alpn": [
-        "h2",
-        "http/1.1"
-      ]
-    },
-    {
-      "name": "Trojan 🇺🇸 TLS [443] #18",
-      "type": "trojan",
-      "server": "66.163.112.142",
-      "port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "cdn.unlockyourfuturefindyourperfectcareer.com",
-      "skip-cert-verify": false,
-      "client-fingerprint": "chrome",
-      "alpn": [
-        "h2",
-        "http/1.1"
-      ]
-    },
-    {
-      "name": "Trojan 🇺🇸 TLS [443] #19",
-      "type": "trojan",
-      "server": "66.163.112.242",
-      "port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "resources.unlockyourfuturefindyourperfectcareer.com",
-      "skip-cert-verify": false,
-      "client-fingerprint": "chrome",
-      "alpn": [
-        "h2",
-        "http/1.1"
-      ]
-    },
-    {
-      "name": "Trojan 🇺🇸 TLS [443] #20",
-      "type": "trojan",
-      "server": "66.163.112.76",
-      "port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "sni": "api.unlockyourfuturefindyourperfectcareer.com",
-      "skip-cert-verify": false,
-      "client-fingerprint": "chrome",
-      "alpn": [
-        "h2",
-        "http/1.1"
-      ]
-    },
-    {
-      "name": "Trojan 🇺🇸 TLS [443] #21",
-      "type": "trojan",
       "server": "66.163.114.106",
       "port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -416,7 +394,7 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #22",
+      "name": "Trojan 🇺🇸 TLS [443] #18",
       "type": "trojan",
       "server": "66.163.114.114",
       "port": 443,
@@ -430,7 +408,7 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #23",
+      "name": "Trojan 🇺🇸 TLS [443] #19",
       "type": "trojan",
       "server": "66.163.114.126",
       "port": 443,
@@ -444,7 +422,7 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #24",
+      "name": "Trojan 🇺🇸 TLS [443] #20",
       "type": "trojan",
       "server": "66.163.114.132",
       "port": 443,
@@ -458,7 +436,7 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #25",
+      "name": "Trojan 🇺🇸 TLS [443] #21",
       "type": "trojan",
       "server": "66.163.114.166",
       "port": 443,
@@ -472,7 +450,7 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #26",
+      "name": "Trojan 🇺🇸 TLS [443] #22",
       "type": "trojan",
       "server": "66.163.114.245",
       "port": 443,
@@ -486,7 +464,63 @@
       ]
     },
     {
-      "name": "Trojan 🇺🇸 TLS [443] #32",
+      "name": "Trojan 🇪🇸 TLS [443] #23",
+      "type": "trojan",
+      "server": "66.163.118.131",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "www.discovergreatjobsandadvanceyourcareer.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
+      "name": "Trojan 🇪🇸 TLS [443] #24",
+      "type": "trojan",
+      "server": "66.163.118.244",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "api.discovergreatjobsandadvanceyourcareer.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
+      "name": "Trojan 🇪🇸 TLS [443] #25",
+      "type": "trojan",
+      "server": "66.163.118.244",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "api.discovergreatjobsandadvanceyourcareer.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
+      "name": "Trojan 🇺🇸 TLS [443] #26",
+      "type": "trojan",
+      "server": "66.163.122.113",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "api.searchnationwidecareerchangehelperandguidancetoday.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
+      "name": "Trojan 🇺🇸 TLS [443] #28",
       "type": "trojan",
       "server": "66.163.122.7",
       "port": 443,
@@ -500,7 +534,21 @@
       ]
     },
     {
-      "name": "Trojan 🇵🇱 TLS [443] #34",
+      "name": "Trojan 🇺🇸 TLS [443] #29",
+      "type": "trojan",
+      "server": "66.163.122.81",
+      "port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "sni": "courses.searchnationwidecareerchangehelperandguidancetoday.com",
+      "skip-cert-verify": false,
+      "client-fingerprint": "chrome",
+      "alpn": [
+        "h2",
+        "http/1.1"
+      ]
+    },
+    {
+      "name": "Trojan 🇵🇱 TLS [443] #30",
       "type": "trojan",
       "server": "70.34.252.255",
       "port": 443,
@@ -578,7 +626,15 @@
       "password": "1Pey1iumq-W30iHVnTEERD2n1RFUS_pS"
     },
     {
-      "name": "SS 🇫🇮 AEAD [8388] #9",
+      "name": "SS 🇩🇪 AEAD [53731] #9",
+      "type": "ss",
+      "server": "49.13.206.112",
+      "port": 53731,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "1Pey1iumq-W30iHVnTEERD2n1RFUS_pS"
+    },
+    {
+      "name": "SS 🇫🇮 AEAD [8388] #10",
       "type": "ss",
       "server": "ams1.rvpn.app",
       "port": 8388,
@@ -586,7 +642,7 @@
       "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
-      "name": "SS 🇬🇧 AEAD [43385] #10",
+      "name": "SS 🇬🇧 AEAD [43385] #11",
       "type": "ss",
       "server": "sql.popmintxo.cc",
       "port": 43385,
@@ -594,7 +650,7 @@
       "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
     },
     {
-      "name": "SS 🇬🇧 AEAD [43385] #11",
+      "name": "SS 🇬🇧 AEAD [43385] #12",
       "type": "ss",
       "server": "104.239.12.81",
       "port": 43385,
@@ -602,23 +658,31 @@
       "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa"
     },
     {
-      "name": "SS 🇺🇦 AEAD [49917] #12",
+      "name": "SS 🇩🇪 AEAD [8388] #15",
       "type": "ss",
-      "server": "staging.lastilhame.monster",
-      "port": 49917,
+      "server": "57.129.113.16",
+      "port": 8388,
       "cipher": "chacha20-ietf-poly1305",
-      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+      "password": "NcAXc0UZI6yQJE1p8QmOv8"
     },
     {
-      "name": "SS 🇺🇦 AEAD [49917] #13",
+      "name": "SS 🇳🇱 AEAD [8080] #16",
       "type": "ss",
-      "server": "104.253.216.227",
-      "port": 49917,
+      "server": "193.29.139.168",
+      "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
-      "password": "G9ZuLN5DE9qqouTZwYUcvYsDJx8gyL1nCu3N7yRZFjPmYKhzSi8GkpVuexmTHAz2uvcErKkex1K2ceR2GH3L444HRNnN1YpP"
+      "password": "QCXDxuDlTTMD7jtgHUjIoj"
     },
     {
-      "name": "SS 🇿🇦 AEAD [16233] #16",
+      "name": "SS 🇳🇱 AEAD [8080] #17",
+      "type": "ss",
+      "server": "193.29.139.212",
+      "port": 8080,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "QCXDxuDlTTMD7jtgHUjIoj"
+    },
+    {
+      "name": "SS 🇿🇦 AEAD [16233] #18",
       "type": "ss",
       "server": "102.133.165.160",
       "port": 16233,
@@ -626,7 +690,7 @@
       "password": "Xsy8Ox4yOV3xLlpxtjzs3X"
     },
     {
-      "name": "SS 🇦🇱 AEAD [43558] #17",
+      "name": "SS 🇦🇱 AEAD [43558] #19",
       "type": "ss",
       "server": "130.49.189.158",
       "port": 43558,
@@ -634,7 +698,7 @@
       "password": "cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI="
     },
     {
-      "name": "SS 🇨🇭 AEAD [8388] #18",
+      "name": "SS 🇨🇭 AEAD [8388] #20",
       "type": "ss",
       "server": "132.243.175.144",
       "port": 8388,
@@ -642,7 +706,15 @@
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
-      "name": "SS 🇳🇱 AEAD [8080] #19",
+      "name": "SS 🇺🇸 AEAD [443] #21",
+      "type": "ss",
+      "server": "198.98.53.130",
+      "port": 443,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "eDfN7SODQceIOmIAbtJJtK"
+    },
+    {
+      "name": "SS 🇳🇱 AEAD [8080] #22",
       "type": "ss",
       "server": "193.29.139.132",
       "port": 8080,
@@ -650,7 +722,7 @@
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
-      "name": "SS 🇳🇱 AEAD [8080] #20",
+      "name": "SS 🇳🇱 AEAD [8080] #23",
       "type": "ss",
       "server": "193.29.139.147",
       "port": 8080,
@@ -658,33 +730,9 @@
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
     },
     {
-      "name": "SS 🇳🇱 AEAD [8080] #21",
-      "type": "ss",
-      "server": "193.29.139.198",
-      "port": 8080,
-      "cipher": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "name": "SS 🇳🇱 AEAD [8080] #22",
-      "type": "ss",
-      "server": "82.38.31.179",
-      "port": 8080,
-      "cipher": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
-      "name": "SS 🇳🇱 AEAD [8080] #23",
-      "type": "ss",
-      "server": "82.38.31.180",
-      "port": 8080,
-      "cipher": "chacha20-ietf-poly1305",
-      "password": "k1dBOmOB4oqi7Ump37a1bQ"
-    },
-    {
       "name": "SS 🇳🇱 AEAD [8080] #24",
       "type": "ss",
-      "server": "82.38.31.181",
+      "server": "82.38.31.176",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -692,7 +740,7 @@
     {
       "name": "SS 🇳🇱 AEAD [8080] #25",
       "type": "ss",
-      "server": "82.38.31.186",
+      "server": "82.38.31.178",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -700,7 +748,7 @@
     {
       "name": "SS 🇳🇱 AEAD [8080] #26",
       "type": "ss",
-      "server": "82.38.31.189",
+      "server": "82.38.31.179",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -708,7 +756,7 @@
     {
       "name": "SS 🇳🇱 AEAD [8080] #27",
       "type": "ss",
-      "server": "82.38.31.193",
+      "server": "82.38.31.180",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -716,7 +764,7 @@
     {
       "name": "SS 🇳🇱 AEAD [8080] #28",
       "type": "ss",
-      "server": "82.38.31.198",
+      "server": "82.38.31.181",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -724,7 +772,31 @@
     {
       "name": "SS 🇳🇱 AEAD [8080] #29",
       "type": "ss",
-      "server": "82.38.31.199",
+      "server": "82.38.31.186",
+      "port": 8080,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "name": "SS 🇳🇱 AEAD [8080] #30",
+      "type": "ss",
+      "server": "82.38.31.189",
+      "port": 8080,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "name": "SS 🇳🇱 AEAD [8080] #31",
+      "type": "ss",
+      "server": "82.38.31.194",
+      "port": 8080,
+      "cipher": "chacha20-ietf-poly1305",
+      "password": "k1dBOmOB4oqi7Ump37a1bQ"
+    },
+    {
+      "name": "SS 🇳🇱 AEAD [8080] #32",
+      "type": "ss",
+      "server": "82.38.31.195",
       "port": 8080,
       "cipher": "chacha20-ietf-poly1305",
       "password": "k1dBOmOB4oqi7Ump37a1bQ"
@@ -757,7 +829,7 @@
       "skip-cert-verify": false
     },
     {
-      "name": "Hysteria2 🇬🇧 QUIC [443] #41",
+      "name": "Hysteria2 🇺🇸 QUIC [443] #41",
       "type": "hysteria2",
       "server": "167.148.201.99",
       "port": 443,
@@ -808,6 +880,8 @@
       "type": "select",
       "proxies": [
         "🚀 Best Ping",
+        "VLESS 🇺🇸 REALITY+PBK+VISION [443] #2",
+        "VLESS 🇺🇸 REALITY+PBK+VISION+UTLS [443] #3",
         "VLESS 🇫🇮 WS+TLS+UTLS [465] #4",
         "VLESS 🇫🇮 WS+TLS+UTLS [465] #5",
         "Trojan 🇩🇪 TLS [443] #1",
@@ -832,12 +906,13 @@
         "Trojan 🇺🇸 TLS [443] #20",
         "Trojan 🇺🇸 TLS [443] #21",
         "Trojan 🇺🇸 TLS [443] #22",
-        "Trojan 🇺🇸 TLS [443] #23",
-        "Trojan 🇺🇸 TLS [443] #24",
-        "Trojan 🇺🇸 TLS [443] #25",
+        "Trojan 🇪🇸 TLS [443] #23",
+        "Trojan 🇪🇸 TLS [443] #24",
+        "Trojan 🇪🇸 TLS [443] #25",
         "Trojan 🇺🇸 TLS [443] #26",
-        "Trojan 🇺🇸 TLS [443] #32",
-        "Trojan 🇵🇱 TLS [443] #34",
+        "Trojan 🇺🇸 TLS [443] #28",
+        "Trojan 🇺🇸 TLS [443] #29",
+        "Trojan 🇵🇱 TLS [443] #30",
         "SS 🇦🇺 2022+BLAKE3 [28679] #1",
         "SS 🇺🇸 2022+BLAKE3 [443] #2",
         "SS 🇳🇱 AEAD [8080] #3",
@@ -846,17 +921,17 @@
         "SS 🇵🇱 AEAD [443] #6",
         "SS 🇵🇱 AEAD [443] #7",
         "SS 🇩🇪 AEAD [53731] #8",
-        "SS 🇫🇮 AEAD [8388] #9",
-        "SS 🇬🇧 AEAD [43385] #10",
+        "SS 🇩🇪 AEAD [53731] #9",
+        "SS 🇫🇮 AEAD [8388] #10",
         "SS 🇬🇧 AEAD [43385] #11",
-        "SS 🇺🇦 AEAD [49917] #12",
-        "SS 🇺🇦 AEAD [49917] #13",
-        "SS 🇿🇦 AEAD [16233] #16",
-        "SS 🇦🇱 AEAD [43558] #17",
-        "SS 🇨🇭 AEAD [8388] #18",
-        "SS 🇳🇱 AEAD [8080] #19",
-        "SS 🇳🇱 AEAD [8080] #20",
-        "SS 🇳🇱 AEAD [8080] #21",
+        "SS 🇬🇧 AEAD [43385] #12",
+        "SS 🇩🇪 AEAD [8388] #15",
+        "SS 🇳🇱 AEAD [8080] #16",
+        "SS 🇳🇱 AEAD [8080] #17",
+        "SS 🇿🇦 AEAD [16233] #18",
+        "SS 🇦🇱 AEAD [43558] #19",
+        "SS 🇨🇭 AEAD [8388] #20",
+        "SS 🇺🇸 AEAD [443] #21",
         "SS 🇳🇱 AEAD [8080] #22",
         "SS 🇳🇱 AEAD [8080] #23",
         "SS 🇳🇱 AEAD [8080] #24",
@@ -865,10 +940,13 @@
         "SS 🇳🇱 AEAD [8080] #27",
         "SS 🇳🇱 AEAD [8080] #28",
         "SS 🇳🇱 AEAD [8080] #29",
+        "SS 🇳🇱 AEAD [8080] #30",
+        "SS 🇳🇱 AEAD [8080] #31",
+        "SS 🇳🇱 AEAD [8080] #32",
         "Hysteria2 🇰🇷 QUIC [50160] #23",
         "Hysteria2 🇺🇸 QUIC [443] #24",
         "Hysteria2 🇺🇸 QUIC [443] #25",
-        "Hysteria2 🇬🇧 QUIC [443] #41",
+        "Hysteria2 🇺🇸 QUIC [443] #41",
         "Hysteria2 🇬🇧 QUIC [443] #42",
         "Hysteria2 🇯🇵 QUIC [443] #45",
         "Hysteria2 🇯🇵 QUIC [443] #46",
@@ -880,6 +958,8 @@
       "name": "🚀 Best Ping",
       "type": "url-test",
       "proxies": [
+        "VLESS 🇺🇸 REALITY+PBK+VISION [443] #2",
+        "VLESS 🇺🇸 REALITY+PBK+VISION+UTLS [443] #3",
         "VLESS 🇫🇮 WS+TLS+UTLS [465] #4",
         "VLESS 🇫🇮 WS+TLS+UTLS [465] #5",
         "Trojan 🇩🇪 TLS [443] #1",
@@ -904,12 +984,13 @@
         "Trojan 🇺🇸 TLS [443] #20",
         "Trojan 🇺🇸 TLS [443] #21",
         "Trojan 🇺🇸 TLS [443] #22",
-        "Trojan 🇺🇸 TLS [443] #23",
-        "Trojan 🇺🇸 TLS [443] #24",
-        "Trojan 🇺🇸 TLS [443] #25",
+        "Trojan 🇪🇸 TLS [443] #23",
+        "Trojan 🇪🇸 TLS [443] #24",
+        "Trojan 🇪🇸 TLS [443] #25",
         "Trojan 🇺🇸 TLS [443] #26",
-        "Trojan 🇺🇸 TLS [443] #32",
-        "Trojan 🇵🇱 TLS [443] #34",
+        "Trojan 🇺🇸 TLS [443] #28",
+        "Trojan 🇺🇸 TLS [443] #29",
+        "Trojan 🇵🇱 TLS [443] #30",
         "SS 🇦🇺 2022+BLAKE3 [28679] #1",
         "SS 🇺🇸 2022+BLAKE3 [443] #2",
         "SS 🇳🇱 AEAD [8080] #3",
@@ -918,17 +999,17 @@
         "SS 🇵🇱 AEAD [443] #6",
         "SS 🇵🇱 AEAD [443] #7",
         "SS 🇩🇪 AEAD [53731] #8",
-        "SS 🇫🇮 AEAD [8388] #9",
-        "SS 🇬🇧 AEAD [43385] #10",
+        "SS 🇩🇪 AEAD [53731] #9",
+        "SS 🇫🇮 AEAD [8388] #10",
         "SS 🇬🇧 AEAD [43385] #11",
-        "SS 🇺🇦 AEAD [49917] #12",
-        "SS 🇺🇦 AEAD [49917] #13",
-        "SS 🇿🇦 AEAD [16233] #16",
-        "SS 🇦🇱 AEAD [43558] #17",
-        "SS 🇨🇭 AEAD [8388] #18",
-        "SS 🇳🇱 AEAD [8080] #19",
-        "SS 🇳🇱 AEAD [8080] #20",
-        "SS 🇳🇱 AEAD [8080] #21",
+        "SS 🇬🇧 AEAD [43385] #12",
+        "SS 🇩🇪 AEAD [8388] #15",
+        "SS 🇳🇱 AEAD [8080] #16",
+        "SS 🇳🇱 AEAD [8080] #17",
+        "SS 🇿🇦 AEAD [16233] #18",
+        "SS 🇦🇱 AEAD [43558] #19",
+        "SS 🇨🇭 AEAD [8388] #20",
+        "SS 🇺🇸 AEAD [443] #21",
         "SS 🇳🇱 AEAD [8080] #22",
         "SS 🇳🇱 AEAD [8080] #23",
         "SS 🇳🇱 AEAD [8080] #24",
@@ -937,10 +1018,13 @@
         "SS 🇳🇱 AEAD [8080] #27",
         "SS 🇳🇱 AEAD [8080] #28",
         "SS 🇳🇱 AEAD [8080] #29",
+        "SS 🇳🇱 AEAD [8080] #30",
+        "SS 🇳🇱 AEAD [8080] #31",
+        "SS 🇳🇱 AEAD [8080] #32",
         "Hysteria2 🇰🇷 QUIC [50160] #23",
         "Hysteria2 🇺🇸 QUIC [443] #24",
         "Hysteria2 🇺🇸 QUIC [443] #25",
-        "Hysteria2 🇬🇧 QUIC [443] #41",
+        "Hysteria2 🇺🇸 QUIC [443] #41",
         "Hysteria2 🇬🇧 QUIC [443] #42",
         "Hysteria2 🇯🇵 QUIC [443] #45",
         "Hysteria2 🇯🇵 QUIC [443] #46",

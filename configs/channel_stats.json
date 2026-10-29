@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-29T15:03:06.027550+00:00",
+  "timestamp": "2026-10-29T15:30:34.359961+00:00",
   "channels": [
     {
       "url": "https://raw.githubusercontent.com/imegabiz/mahsa-subscription-exporter/main/configs.txt",
@@ -8,11 +8,11 @@
         "total_configs": 40,
         "valid_configs": 26,
         "unique_configs": 26,
-        "avg_response_time": 0.25,
+        "avg_response_time": 0.18,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 90.87,
-        "last_success": "2026-10-29T15:01:36.369172+00:00",
+        "overall_score": 90.97,
+        "last_success": "2026-10-29T15:29:04.735008+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 2,
@@ -31,11 +31,11 @@
         "total_configs": 35,
         "valid_configs": 18,
         "unique_configs": 18,
-        "avg_response_time": 0.1,
+        "avg_response_time": 0.11,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 87.71,
-        "last_success": "2026-10-29T15:01:38.477022+00:00",
+        "overall_score": 87.69,
+        "last_success": "2026-10-29T15:29:06.849077+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -54,11 +54,11 @@
         "total_configs": 316,
         "valid_configs": 194,
         "unique_configs": 188,
-        "avg_response_time": 0.07,
+        "avg_response_time": 0.01,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 89.47,
-        "last_success": "2026-10-29T15:01:40.573656+00:00",
+        "overall_score": 89.56,
+        "last_success": "2026-10-29T15:29:08.876651+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 73,
@@ -77,11 +77,11 @@
         "total_configs": 12,
         "valid_configs": 6,
         "unique_configs": 6,
-        "avg_response_time": 0.07,
+        "avg_response_time": 0.01,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 87.4,
-        "last_success": "2026-10-29T15:01:42.646236+00:00",
+        "overall_score": 87.48,
+        "last_success": "2026-10-29T15:29:10.889903+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -104,7 +104,7 @@
         "success_count": 1,
         "fail_count": 0,
         "overall_score": 89.46,
-        "last_success": "2026-10-29T15:01:44.794781+00:00",
+        "last_success": "2026-10-29T15:29:13.015171+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -123,11 +123,11 @@
         "total_configs": 15,
         "valid_configs": 14,
         "unique_configs": 12,
-        "avg_response_time": 0.08,
+        "avg_response_time": 0.11,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 94.63,
-        "last_success": "2026-10-29T15:01:46.881407+00:00",
+        "overall_score": 94.6,
+        "last_success": "2026-10-29T15:29:15.125577+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -146,11 +146,11 @@
         "total_configs": 330,
         "valid_configs": 305,
         "unique_configs": 286,
-        "avg_response_time": 0.07,
+        "avg_response_time": 0.1,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 96.45,
-        "last_success": "2026-10-29T15:01:48.985851+00:00",
+        "overall_score": 96.39,
+        "last_success": "2026-10-29T15:29:17.245470+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 72,
@@ -169,11 +169,11 @@
         "total_configs": 10,
         "valid_configs": 7,
         "unique_configs": 6,
-        "avg_response_time": 0.65,
+        "avg_response_time": 0.56,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 87.95,
-        "last_success": "2026-10-29T15:01:51.705673+00:00",
+        "overall_score": 88.09,
+        "last_success": "2026-10-29T15:29:19.839449+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -192,11 +192,11 @@
         "total_configs": 30,
         "valid_configs": 24,
         "unique_configs": 24,
-        "avg_response_time": 0.07,
+        "avg_response_time": 0.01,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 94.89,
-        "last_success": "2026-10-29T15:01:53.785299+00:00",
+        "overall_score": 94.99,
+        "last_success": "2026-10-29T15:29:21.853753+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -218,8 +218,8 @@
         "avg_response_time": 0.07,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 77.31,
-        "last_success": "2026-10-29T15:01:55.912574+00:00",
+        "overall_score": 77.32,
+        "last_success": "2026-10-29T15:29:23.949808+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 8,
@@ -238,11 +238,11 @@
         "total_configs": 1,
         "valid_configs": 1,
         "unique_configs": 1,
-        "avg_response_time": 0.08,
+        "avg_response_time": 0.1,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 99.89,
-        "last_success": "2026-10-29T15:01:58.019716+00:00",
+        "overall_score": 99.85,
+        "last_success": "2026-10-29T15:29:26.071245+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -307,11 +307,11 @@
         "total_configs": 521,
         "valid_configs": 317,
         "unique_configs": 171,
-        "avg_response_time": 2.11,
+        "avg_response_time": 1.93,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 75.54,
-        "last_success": "2026-10-29T15:02:07.955490+00:00",
+        "overall_score": 75.81,
+        "last_success": "2026-10-29T15:29:35.878562+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 2,
@@ -330,11 +330,11 @@
         "total_configs": 868,
         "valid_configs": 746,
         "unique_configs": 718,
-        "avg_response_time": 2.14,
+        "avg_response_time": 1.52,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 92.34,
-        "last_success": "2026-10-29T15:02:12.315126+00:00",
+        "overall_score": 93.27,
+        "last_success": "2026-10-29T15:29:39.506005+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -353,11 +353,11 @@
         "total_configs": 10,
         "valid_configs": 5,
         "unique_configs": 5,
-        "avg_response_time": 1.51,
+        "avg_response_time": 1.52,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 85.24,
-        "last_success": "2026-10-29T15:02:15.823642+00:00",
+        "overall_score": 85.22,
+        "last_success": "2026-10-29T15:29:43.030090+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -399,11 +399,11 @@
         "total_configs": 139,
         "valid_configs": 70,
         "unique_configs": 52,
-        "avg_response_time": 0.71,
+        "avg_response_time": 0.55,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 80.09,
-        "last_success": "2026-10-29T15:02:22.274160+00:00",
+        "overall_score": 80.33,
+        "last_success": "2026-10-29T15:29:49.269999+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -468,11 +468,11 @@
         "total_configs": 19,
         "valid_configs": 12,
         "unique_configs": 6,
-        "avg_response_time": 0.63,
+        "avg_response_time": 0.51,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 77.35,
-        "last_success": "2026-10-29T15:02:29.792529+00:00",
+        "overall_score": 77.52,
+        "last_success": "2026-10-29T15:29:56.856649+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
@@ -650,20 +650,20 @@
       "enabled": true,
       "metrics": {
         "total_configs": 5031,
-        "valid_configs": 3322,
-        "unique_configs": 3268,
-        "avg_response_time": 1.65,
+        "valid_configs": 3307,
+        "unique_configs": 3255,
+        "avg_response_time": 1.57,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 88.63,
-        "last_success": "2026-10-29T15:02:51.856339+00:00",
+        "overall_score": 88.68,
+        "last_success": "2026-10-29T15:30:18.891497+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
           "vless://": 0,
-          "vmess://": 2420,
+          "vmess://": 2415,
           "ss://": 5,
-          "trojan://": 897,
+          "trojan://": 887,
           "tuic://": 0
         }
       }
@@ -672,21 +672,21 @@
       "url": "https://github.com/SoliSpirit/v2ray-configs",
       "enabled": true,
       "metrics": {
-        "total_configs": 1740,
-        "valid_configs": 1197,
-        "unique_configs": 897,
-        "avg_response_time": 1.82,
+        "total_configs": 1788,
+        "valid_configs": 1236,
+        "unique_configs": 934,
+        "avg_response_time": 2.4,
         "success_count": 1,
         "fail_count": 0,
-        "overall_score": 83.2,
-        "last_success": "2026-10-29T15:02:55.891664+00:00",
+        "overall_score": 82.57,
+        "last_success": "2026-10-29T15:30:23.400734+00:00",
         "protocol_counts": {
           "wireguard://": 0,
           "hysteria2://": 0,
-          "vless://": 751,
+          "vless://": 768,
           "vmess://": 220,
-          "ss://": 92,
-          "trojan://": 134,
+          "ss://": 111,
+          "trojan://": 137,
           "tuic://": 0
         }
       }
@@ -809,904 +809,13 @@
   ],
   "history": [
     {
-      "timestamp": "2026-10-15T18:26:33.267492+00:00",
-      "active_channels": 10,
-      "total_channels": 10,
-      "total_valid_configs": 728,
-      "total_saved_configs": 709,
-      "avg_score": 86.95,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-15T20:26:47.964524+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 753,
-      "total_saved_configs": 733,
-      "avg_score": 82.22,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-15T23:11:41.821204+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 744,
-      "total_saved_configs": 723,
-      "avg_score": 81.56,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-16T01:33:28.051377+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 746,
-      "total_saved_configs": 724,
-      "avg_score": 81.1,
-      "avg_response_time": 0.52
-    },
-    {
-      "timestamp": "2026-10-16T07:27:15.320910+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 737,
-      "total_saved_configs": 716,
-      "avg_score": 81.48,
-      "avg_response_time": 0.09
-    },
-    {
-      "timestamp": "2026-10-16T10:03:56.910203+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 743,
-      "total_saved_configs": 722,
-      "avg_score": 81.3,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-16T13:29:30.414176+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 744,
-      "total_saved_configs": 723,
-      "avg_score": 80.9,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-16T15:25:19.188837+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 760,
-      "total_saved_configs": 740,
-      "avg_score": 82.24,
-      "avg_response_time": 0.06
-    },
-    {
-      "timestamp": "2026-10-16T18:13:46.208632+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 698,
-      "total_saved_configs": 691,
-      "avg_score": 83.89,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-16T20:00:22.095226+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 697,
-      "total_saved_configs": 689,
-      "avg_score": 83.73,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-16T22:57:39.038046+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 673,
-      "total_saved_configs": 669,
-      "avg_score": 83.46,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-17T01:26:09.200136+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 675,
-      "total_saved_configs": 669,
-      "avg_score": 82.52,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-17T07:08:20.672320+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 689,
-      "total_saved_configs": 679,
-      "avg_score": 76.48,
-      "avg_response_time": 0.02
-    },
-    {
-      "timestamp": "2026-10-17T09:37:23.801257+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 701,
-      "total_saved_configs": 690,
-      "avg_score": 81.78,
-      "avg_response_time": 0.11
-    },
-    {
-      "timestamp": "2026-10-17T12:19:41.359040+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 700,
-      "total_saved_configs": 694,
-      "avg_score": 82.93,
-      "avg_response_time": 0.12
-    },
-    {
-      "timestamp": "2026-10-17T14:18:15.787824+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 705,
-      "total_saved_configs": 698,
-      "avg_score": 82.21,
-      "avg_response_time": 0.47
-    },
-    {
-      "timestamp": "2026-10-17T17:23:13.001188+00:00",
-      "active_channels": 9,
-      "total_channels": 10,
-      "total_valid_configs": 702,
-      "total_saved_configs": 694,
-      "avg_score": 83.17,
-      "avg_response_time": 0.11
-    },
-    {
-      "timestamp": "2026-10-17T19:35:12.358801+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 698,
-      "total_saved_configs": 691,
-      "avg_score": 89.73,
-      "avg_response_time": 0.12
-    },
-    {
-      "timestamp": "2026-10-17T22:32:40.860636+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 695,
-      "total_saved_configs": 688,
-      "avg_score": 90.74,
-      "avg_response_time": 0.17
-    },
-    {
-      "timestamp": "2026-10-18T01:20:17.416091+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 701,
-      "total_saved_configs": 688,
-      "avg_score": 89.7,
-      "avg_response_time": 0.29
-    },
-    {
-      "timestamp": "2026-10-18T07:22:44.274453+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 689,
-      "total_saved_configs": 679,
-      "avg_score": 90.25,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-18T09:49:36.881590+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 686,
-      "total_saved_configs": 677,
-      "avg_score": 90.59,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-18T12:44:50.759254+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 673,
-      "total_saved_configs": 662,
-      "avg_score": 90.75,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-18T14:42:03.033511+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 678,
-      "total_saved_configs": 667,
-      "avg_score": 90.7,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-18T17:27:34.499697+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 759,
-      "total_saved_configs": 733,
-      "avg_score": 89.41,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-18T19:31:16.846367+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 759,
-      "total_saved_configs": 733,
-      "avg_score": 88.97,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-18T22:31:53.446525+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 766,
-      "total_saved_configs": 736,
-      "avg_score": 89.14,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-19T01:28:41.772061+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 769,
-      "total_saved_configs": 738,
-      "avg_score": 88.11,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-19T08:01:20.963776+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 758,
-      "total_saved_configs": 728,
-      "avg_score": 87.71,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-19T11:08:37.680648+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 749,
-      "total_saved_configs": 721,
-      "avg_score": 88.06,
-      "avg_response_time": 0.12
-    },
-    {
-      "timestamp": "2026-10-19T15:50:20.682474+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 752,
-      "total_saved_configs": 726,
-      "avg_score": 89.07,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-19T17:36:19.835560+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 741,
-      "total_saved_configs": 716,
-      "avg_score": 88.37,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-19T20:02:57.419796+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 601,
-      "total_saved_configs": 592,
-      "avg_score": 89.01,
-      "avg_response_time": 0.18
-    },
-    {
-      "timestamp": "2026-10-19T21:38:58.938694+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 643,
-      "total_saved_configs": 634,
-      "avg_score": 89.32,
-      "avg_response_time": 0.2
-    },
-    {
-      "timestamp": "2026-10-19T23:52:53.791045+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 645,
-      "total_saved_configs": 636,
-      "avg_score": 89.52,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-20T01:58:50.189173+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 656,
-      "total_saved_configs": 642,
-      "avg_score": 88.51,
-      "avg_response_time": 0.12
-    },
-    {
-      "timestamp": "2026-10-20T07:51:54.073927+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 663,
-      "total_saved_configs": 644,
-      "avg_score": 87.59,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-20T10:21:33.256295+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 656,
-      "total_saved_configs": 641,
-      "avg_score": 88.01,
-      "avg_response_time": 0.19
-    },
-    {
-      "timestamp": "2026-10-20T13:46:41.639453+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 664,
-      "total_saved_configs": 639,
-      "avg_score": 87.52,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-20T15:42:16.386505+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 690,
-      "total_saved_configs": 670,
-      "avg_score": 88.16,
-      "avg_response_time": 0.12
-    },
-    {
-      "timestamp": "2026-10-20T18:34:38.043097+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 708,
-      "total_saved_configs": 694,
-      "avg_score": 89.35,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-20T20:45:55.408480+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 699,
-      "total_saved_configs": 685,
-      "avg_score": 88.51,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-20T23:18:26.511042+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 750,
-      "total_saved_configs": 735,
-      "avg_score": 88.73,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-21T01:48:06.345692+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 754,
-      "total_saved_configs": 741,
-      "avg_score": 88.79,
-      "avg_response_time": 0.3
-    },
-    {
-      "timestamp": "2026-10-21T07:55:41.574397+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 748,
-      "total_saved_configs": 739,
-      "avg_score": 90.5,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-21T10:30:22.282948+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 751,
-      "total_saved_configs": 738,
-      "avg_score": 89.76,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-21T14:02:12.403835+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 760,
-      "total_saved_configs": 747,
-      "avg_score": 89.02,
-      "avg_response_time": 0.06
-    },
-    {
-      "timestamp": "2026-10-21T16:00:35.100805+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 768,
-      "total_saved_configs": 754,
-      "avg_score": 88.97,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-21T18:47:37.865282+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 849,
-      "total_saved_configs": 822,
-      "avg_score": 88.96,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-21T20:46:08.119500+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 843,
-      "total_saved_configs": 813,
-      "avg_score": 85.64,
-      "avg_response_time": 0.28
-    },
-    {
-      "timestamp": "2026-10-21T23:32:33.168386+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 1020,
-      "total_saved_configs": 990,
-      "avg_score": 86.51,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-22T01:40:53.145106+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 1020,
-      "total_saved_configs": 993,
-      "avg_score": 87.94,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-22T07:52:14.315214+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 1027,
-      "total_saved_configs": 999,
-      "avg_score": 88.24,
-      "avg_response_time": 0.09
-    },
-    {
-      "timestamp": "2026-10-22T10:32:05.333429+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 1026,
-      "total_saved_configs": 1000,
-      "avg_score": 88.22,
-      "avg_response_time": 0.19
-    },
-    {
-      "timestamp": "2026-10-22T14:00:37.289667+00:00",
-      "active_channels": 8,
-      "total_channels": 9,
-      "total_valid_configs": 999,
-      "total_saved_configs": 972,
-      "avg_score": 79.51,
-      "avg_response_time": 0.09
-    },
-    {
-      "timestamp": "2026-10-22T15:56:14.192751+00:00",
-      "active_channels": 8,
-      "total_channels": 9,
-      "total_valid_configs": 973,
-      "total_saved_configs": 946,
-      "avg_score": 79.74,
-      "avg_response_time": 0.11
-    },
-    {
-      "timestamp": "2026-10-22T18:41:11.457064+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 910,
-      "total_saved_configs": 890,
-      "avg_score": 88.26,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-22T20:41:38.895199+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 905,
-      "total_saved_configs": 886,
-      "avg_score": 88.33,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-22T23:30:59.804462+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 915,
-      "total_saved_configs": 900,
-      "avg_score": 89.91,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-23T01:43:24.233362+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 909,
-      "total_saved_configs": 894,
-      "avg_score": 89.65,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-23T07:51:04.289480+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 919,
-      "total_saved_configs": 899,
-      "avg_score": 89.5,
-      "avg_response_time": 0.25
-    },
-    {
-      "timestamp": "2026-10-23T10:26:35.482628+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 917,
-      "total_saved_configs": 896,
-      "avg_score": 89.12,
-      "avg_response_time": 0.11
-    },
-    {
-      "timestamp": "2026-10-23T13:43:15.548232+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 918,
-      "total_saved_configs": 901,
-      "avg_score": 89.83,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-23T15:48:17.191603+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 711,
-      "total_saved_configs": 695,
-      "avg_score": 90.2,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-23T18:33:30.852542+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 696,
-      "total_saved_configs": 680,
-      "avg_score": 90.15,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-23T20:33:15.345358+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 700,
-      "total_saved_configs": 683,
-      "avg_score": 89.95,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-23T23:20:58.741697+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 709,
-      "total_saved_configs": 696,
-      "avg_score": 90.75,
-      "avg_response_time": 0.11
-    },
-    {
-      "timestamp": "2026-10-24T01:46:24.688250+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 704,
-      "total_saved_configs": 691,
-      "avg_score": 90.62,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-24T07:32:25.495320+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 716,
-      "total_saved_configs": 700,
-      "avg_score": 90.04,
-      "avg_response_time": 0.05
-    },
-    {
-      "timestamp": "2026-10-24T09:45:36.158808+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 710,
-      "total_saved_configs": 692,
-      "avg_score": 89.7,
-      "avg_response_time": 0.16
-    },
-    {
-      "timestamp": "2026-10-24T12:51:58.155411+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 703,
-      "total_saved_configs": 682,
-      "avg_score": 89.42,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-24T14:41:37.473744+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 695,
-      "total_saved_configs": 675,
-      "avg_score": 88.93,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-24T17:30:43.366352+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 760,
-      "total_saved_configs": 740,
-      "avg_score": 88.51,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-24T19:36:48.132683+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 760,
-      "total_saved_configs": 742,
-      "avg_score": 89.39,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-24T22:40:24.762614+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 756,
-      "total_saved_configs": 737,
-      "avg_score": 89.29,
-      "avg_response_time": 0.05
-    },
-    {
-      "timestamp": "2026-10-25T01:23:13.315315+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 760,
-      "total_saved_configs": 746,
-      "avg_score": 90.34,
-      "avg_response_time": 0.16
-    },
-    {
-      "timestamp": "2026-10-25T07:45:51.909124+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 753,
-      "total_saved_configs": 735,
-      "avg_score": 89.22,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-25T10:04:27.897968+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 755,
-      "total_saved_configs": 735,
-      "avg_score": 88.93,
-      "avg_response_time": 0.16
-    },
-    {
-      "timestamp": "2026-10-25T13:18:40.416329+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 741,
-      "total_saved_configs": 721,
-      "avg_score": 89.6,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-25T14:59:23.012436+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 660,
-      "total_saved_configs": 643,
-      "avg_score": 89.94,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-25T17:43:08.222828+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 579,
-      "total_saved_configs": 563,
-      "avg_score": 88.21,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-25T19:49:39.346148+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 586,
-      "total_saved_configs": 569,
-      "avg_score": 88.73,
-      "avg_response_time": 0.07
-    },
-    {
-      "timestamp": "2026-10-25T22:44:37.898647+00:00",
-      "active_channels": 9,
-      "total_channels": 9,
-      "total_valid_configs": 583,
-      "total_saved_configs": 568,
-      "avg_score": 89.06,
-      "avg_response_time": 0.13
-    },
-    {
-      "timestamp": "2026-10-25T23:31:46.642873+00:00",
-      "active_channels": 7,
-      "total_channels": 7,
-      "total_valid_configs": 531,
-      "total_saved_configs": 520,
-      "avg_score": 91.68,
-      "avg_response_time": 0.08
-    },
-    {
-      "timestamp": "2026-10-26T01:27:21.960007+00:00",
-      "active_channels": 7,
-      "total_channels": 7,
-      "total_valid_configs": 530,
-      "total_saved_configs": 519,
-      "avg_score": 91.31,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-26T08:01:52.384398+00:00",
-      "active_channels": 7,
-      "total_channels": 7,
-      "total_valid_configs": 532,
-      "total_saved_configs": 522,
-      "avg_score": 91.46,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-26T11:27:20.062586+00:00",
-      "active_channels": 7,
-      "total_channels": 7,
-      "total_valid_configs": 533,
-      "total_saved_configs": 523,
-      "avg_score": 91.48,
-      "avg_response_time": 0.14
-    },
-    {
-      "timestamp": "2026-10-26T13:24:24.859529+00:00",
-      "active_channels": 8,
-      "total_channels": 8,
-      "total_valid_configs": 580,
-      "total_saved_configs": 569,
-      "avg_score": 90.96,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-26T15:22:45.997726+00:00",
-      "active_channels": 8,
-      "total_channels": 8,
-      "total_valid_configs": 579,
-      "total_saved_configs": 568,
-      "avg_score": 90.42,
-      "avg_response_time": 0.17
-    },
-    {
-      "timestamp": "2026-10-26T17:29:06.368973+00:00",
-      "active_channels": 8,
-      "total_channels": 8,
-      "total_valid_configs": 550,
-      "total_saved_configs": 538,
-      "avg_score": 90.27,
-      "avg_response_time": 0.1
-    },
-    {
-      "timestamp": "2026-10-26T20:02:13.586967+00:00",
-      "active_channels": 8,
-      "total_channels": 8,
-      "total_valid_configs": 642,
-      "total_saved_configs": 620,
-      "avg_score": 90.67,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-26T21:44:14.530644+00:00",
-      "active_channels": 8,
-      "total_channels": 8,
-      "total_valid_configs": 642,
-      "total_saved_configs": 621,
-      "avg_score": 90.79,
-      "avg_response_time": 0.15
-    },
-    {
-      "timestamp": "2026-10-27T22:22:28.694896+00:00",
-      "active_channels": 24,
-      "total_channels": 35,
-      "total_valid_configs": 11592,
-      "total_saved_configs": 300,
-      "avg_score": 62.02,
-      "avg_response_time": 0.47
-    },
-    {
-      "timestamp": "2026-10-27T22:36:12.005722+00:00",
-      "active_channels": 23,
-      "total_channels": 35,
-      "total_valid_configs": 11635,
-      "total_saved_configs": 300,
-      "avg_score": 59.66,
-      "avg_response_time": 0.44
-    },
-    {
-      "timestamp": "2026-10-27T23:04:35.109185+00:00",
-      "active_channels": 23,
-      "total_channels": 35,
-      "total_valid_configs": 11709,
-      "total_saved_configs": 300,
-      "avg_score": 59.3,
-      "avg_response_time": 0.45
-    },
-    {
-      "timestamp": "2026-10-27T23:58:10.948747+00:00",
-      "active_channels": 23,
-      "total_channels": 35,
-      "total_valid_configs": 11731,
-      "total_saved_configs": 300,
-      "avg_score": 59.49,
-      "avg_response_time": 0.3
-    },
-    {
-      "timestamp": "2026-10-28T07:47:53.107478+00:00",
-      "active_channels": 23,
-      "total_channels": 35,
-      "total_valid_configs": 11546,
-      "total_saved_configs": 300,
-      "avg_score": 60.34,
-      "avg_response_time": 0.36
-    },
-    {
-      "timestamp": "2026-10-28T08:27:31.262090+00:00",
-      "active_channels": 23,
-      "total_channels": 35,
-      "total_valid_configs": 11445,
-      "total_saved_configs": 300,
-      "avg_score": 60.33,
-      "avg_response_time": 0.28
-    },
-    {
-      "timestamp": "2026-10-29T00:07:43.111904+00:00",
-      "active_channels": 21,
-      "total_channels": 35,
-      "total_valid_configs": 7049,
-      "total_saved_configs": 300,
-      "avg_score": 57.8,
-      "avg_response_time": 0.24
-    },
-    {
-      "timestamp": "2026-10-29T15:03:06.027550+00:00",
+      "timestamp": "2026-10-29T15:30:34.359961+00:00",
       "active_channels": 19,
       "total_channels": 35,
-      "total_valid_configs": 6739,
+      "total_valid_configs": 6763,
       "total_saved_configs": 300,
-      "avg_score": 52.94,
-      "avg_response_time": 0.35
+      "avg_score": 52.98,
+      "avg_response_time": 0.32
     }
   ]
 }

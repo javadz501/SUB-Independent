@@ -16,6 +16,10 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@193.108.119.96:443?sni=learn.iloveruss
 
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUGV5MWl1bXEtVzMwaUhWblRFRVJEMm4xUkZVU19wUw@gr1s.sublinkplas.ir:53731#SS 🇩🇪 AEAD [53731]
 
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxUGV5MWl1bXEtVzMwaUhWblRFRVJEMm4xUkZVU19wUw@49.13.206.112:53731#SS 🇩🇪 AEAD [53731]
+
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTpOY0FYYzBVWkk2eVFKRTFwOFFtT3Y4@57.129.113.16:8388#SS 🇩🇪 AEAD [8388]
+
 hysteria2://10be1dad-9952-4c5e-aa30-db435f69b727@13.143.188.152:4444?sni=bl2.nexfile.net&path=%2f#Hysteria2 🇩🇪 QUIC [4444]
 
 hysteria2://10be1dad-9952-4c5e-aa30-db435f69b727@13.143.188.153:4444?sni=bl2.nexfile.net&path=%2f#Hysteria2 🇩🇪 QUIC [4444]
@@ -41,4 +45,6 @@ hysteria2://2691cbe7c20cced8b0aeb12c812d09077e5b3eec7669fb8f@replay.wwwinternetv
 hysteria2://2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o@89.125.156.80:443?insecure=1&sni=pixelcast.wwwinternetvideo.click#Hysteria2 🇩🇪 QUIC [443]
 
 hysteria2://2vwMMy8t5Sjl5lfK9dNF1OrU9d0K25V2RNWLbTKwJ6o@pixelcast.wwwinternetvideo.click:443?insecure=1&sni=pixelcast.wwwinternetvideo.click#Hysteria2 🇩🇪 QUIC [443]
+
+hysteria2://BPvdjudCGodsF67hRP3xgBYvcKp48coTsh6ANydLhQs=@fin14qr.wwwinternetvideo.click:443?insecure=1&sni=fin14qr.wwwinternetvideo.click#Hysteria2 🇩🇪 QUIC [443]
 

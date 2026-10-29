@@ -22,14 +22,6 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.156.65:443?security=tls&sni=le
 
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@216.152.156.81:443?security=tls&sni=www.healthcarejobshubenhancemedicalprofessionalskillstoday.com#Trojan 🇺🇸 TLS [443]
 
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.13:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=blog.unlockyourfuturefindyourperfectcareer.com#Trojan 🇺🇸 TLS [443]
-
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.142:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=cdn.unlockyourfuturefindyourperfectcareer.com#Trojan 🇺🇸 TLS [443]
-
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.242:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=resources.unlockyourfuturefindyourperfectcareer.com#Trojan 🇺🇸 TLS [443]
-
-trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.112.76:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=api.unlockyourfuturefindyourperfectcareer.com#Trojan 🇺🇸 TLS [443]
-
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.106:443?security=tls&insecure=0&headerType=none&type=tcp&allowInsecure=0&sni=www.findconnectwithemployersandbuildprofessionalnetwork.com#Trojan 🇺🇸 TLS [443]
 
 trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.114.114:443?security=tls&sni=learn.findconnectwithemployersandbuildprofessionalnetwork.com#Trojan 🇺🇸 TLS [443]
@@ -52,6 +44,8 @@ trojan://0ab6c98dae3b48e8b9c4a776b6c9c19a@66.163.122.81:443?security=tls&sni=cou
 
 ss://MjAyMi1ibGFrZTMtYWVzLTI1Ni1nY206UTJZc0l6YzVZa2NoU0Zqc3FVWldyUUFGdHNTcHFmN1h4WXhrRzQrSmJzaz06elQxU2VjUHR0UFkvWFBXNk53aks1V3FsKy82emJjR1NESksyMUprOHVMbz0@216.9.225.189:443#SS 🇺🇸 2022+BLAKE3 [443]
 
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTplRGZON1NPRFFjZUlPbUlBYnRKSnRL@198.98.53.130:443#SS 🇺🇸 AEAD [443]
+
 hysteria2://23c82941-70f4-4381-90db-bd28e9a902e9@179.254.127.159:443?sni=steel7.hadsvpn.com&path=%2f#Hysteria2 🇺🇸 QUIC [443]
 
 hysteria2://23c82941-70f4-4381-90db-bd28e9a902e9@steel7.hadsvpn.com:443?sni=steel7.hadsvpn.com&path=%2f#Hysteria2 🇺🇸 QUIC [443]
@@ -65,4 +59,6 @@ hysteria2://4fUg3KH31LpMhko6o0Ka9Q@198.46.146.118:36720?sni=bing.com&path=%2f&al
 hysteria2://5fd276c9-f03b-4040-850d-277b765f5ab0@us02zl.poke-mon.xyz:443?sni=bing.com&path=%2f&allow_insecure=1#Hysteria2 🇺🇸 QUIC [443]
 
 hysteria2://64c05afc-ce81-4ba0-b697-afa04da1427e@104.168.6.236:44443?sni=bing.com&path=%2f&allow_insecure=1#Hysteria2 🇺🇸 QUIC [44443]
+
+hysteria2://7c9c7f52-5a8c-43e0-b6d1-c8552289f230@167.148.201.99:443?sni=us.mi11o4ka.com&path=%2f#Hysteria2 🇺🇸 QUIC [443]
 

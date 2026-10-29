@@ -647,110 +647,6 @@
       "settings": {
         "servers": [
           {
-            "address": "66.163.112.13",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "blog.unlockyourfuturefindyourperfectcareer.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-22"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "66.163.112.142",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "cdn.unlockyourfuturefindyourperfectcareer.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-23"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "66.163.112.242",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "resources.unlockyourfuturefindyourperfectcareer.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-24"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "66.163.112.76",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.unlockyourfuturefindyourperfectcareer.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-25"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
             "address": "66.163.114.106",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -770,7 +666,7 @@
           ]
         }
       },
-      "tag": "proxy-26"
+      "tag": "proxy-22"
     },
     {
       "protocol": "trojan",
@@ -796,7 +692,7 @@
           ]
         }
       },
-      "tag": "proxy-27"
+      "tag": "proxy-23"
     },
     {
       "protocol": "trojan",
@@ -822,7 +718,7 @@
           ]
         }
       },
-      "tag": "proxy-28"
+      "tag": "proxy-24"
     },
     {
       "protocol": "trojan",
@@ -848,7 +744,7 @@
           ]
         }
       },
-      "tag": "proxy-29"
+      "tag": "proxy-25"
     },
     {
       "protocol": "trojan",
@@ -874,7 +770,7 @@
           ]
         }
       },
-      "tag": "proxy-30"
+      "tag": "proxy-26"
     },
     {
       "protocol": "trojan",
@@ -900,7 +796,7 @@
           ]
         }
       },
-      "tag": "proxy-31"
+      "tag": "proxy-27"
     },
     {
       "protocol": "trojan",
@@ -926,7 +822,7 @@
           ]
         }
       },
-      "tag": "proxy-32"
+      "tag": "proxy-28"
     },
     {
       "protocol": "trojan",
@@ -952,7 +848,7 @@
           ]
         }
       },
-      "tag": "proxy-33"
+      "tag": "proxy-29"
     },
     {
       "protocol": "trojan",
@@ -978,7 +874,7 @@
           ]
         }
       },
-      "tag": "proxy-34"
+      "tag": "proxy-30"
     },
     {
       "protocol": "trojan",
@@ -1004,7 +900,7 @@
           ]
         }
       },
-      "tag": "proxy-35"
+      "tag": "proxy-31"
     },
     {
       "protocol": "trojan",
@@ -1030,7 +926,7 @@
           ]
         }
       },
-      "tag": "proxy-36"
+      "tag": "proxy-32"
     },
     {
       "protocol": "trojan",
@@ -1056,7 +952,7 @@
           ]
         }
       },
-      "tag": "proxy-37"
+      "tag": "proxy-33"
     },
     {
       "protocol": "trojan",
@@ -1082,7 +978,7 @@
           ]
         }
       },
-      "tag": "proxy-38"
+      "tag": "proxy-34"
     },
     {
       "protocol": "trojan",
@@ -1108,7 +1004,7 @@
           ]
         }
       },
-      "tag": "proxy-39"
+      "tag": "proxy-35"
     },
     {
       "protocol": "shadowsocks",
@@ -1126,7 +1022,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-40"
+      "tag": "proxy-36"
     },
     {
       "protocol": "shadowsocks",
@@ -1144,7 +1040,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-41"
+      "tag": "proxy-37"
     },
     {
       "protocol": "shadowsocks",
@@ -1162,7 +1058,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-42"
+      "tag": "proxy-38"
     },
     {
       "protocol": "shadowsocks",
@@ -1180,7 +1076,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-43"
+      "tag": "proxy-39"
     },
     {
       "protocol": "shadowsocks",
@@ -1198,7 +1094,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-44"
+      "tag": "proxy-40"
     },
     {
       "protocol": "shadowsocks",
@@ -1216,7 +1112,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-45"
+      "tag": "proxy-41"
     },
     {
       "protocol": "shadowsocks",
@@ -1234,7 +1130,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-46"
+      "tag": "proxy-42"
     },
     {
       "protocol": "shadowsocks",
@@ -1252,7 +1148,25 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-47"
+      "tag": "proxy-43"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "49.13.206.112",
+            "port": 53731,
+            "method": "chacha20-ietf-poly1305",
+            "password": "1Pey1iumq-W30iHVnTEERD2n1RFUS_pS",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "tag": "proxy-44"
     },
     {
       "protocol": "shadowsocks",
@@ -1270,7 +1184,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-48"
+      "tag": "proxy-45"
     },
     {
       "protocol": "shadowsocks",
@@ -1288,7 +1202,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-49"
+      "tag": "proxy-46"
     },
     {
       "protocol": "shadowsocks",
@@ -1306,7 +1220,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-50"
+      "tag": "proxy-47"
     },
     {
       "protocol": "shadowsocks",
@@ -1324,7 +1238,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-51"
+      "tag": "proxy-48"
     },
     {
       "protocol": "shadowsocks",
@@ -1342,17 +1256,17 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-52"
+      "tag": "proxy-49"
     },
     {
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "msk2.rvpn.app",
+            "address": "57.129.113.16",
             "port": 8388,
             "method": "chacha20-ietf-poly1305",
-            "password": "MODziWLa9qMuW-4yPa0rfw",
+            "password": "NcAXc0UZI6yQJE1p8QmOv8",
             "level": 8
           }
         ]
@@ -1360,7 +1274,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-53"
+      "tag": "proxy-50"
     },
     {
       "protocol": "shadowsocks",
@@ -1378,7 +1292,25 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-54"
+      "tag": "proxy-51"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "193.29.139.212",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "QCXDxuDlTTMD7jtgHUjIoj",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "tag": "proxy-52"
     },
     {
       "protocol": "shadowsocks",
@@ -1396,7 +1328,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-55"
+      "tag": "proxy-53"
     },
     {
       "protocol": "shadowsocks",
@@ -1414,7 +1346,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-56"
+      "tag": "proxy-54"
     },
     {
       "protocol": "shadowsocks",
@@ -1432,7 +1364,25 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-57"
+      "tag": "proxy-55"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "198.98.53.130",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "eDfN7SODQceIOmIAbtJJtK",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "tag": "proxy-56"
     },
     {
       "protocol": "shadowsocks",
@@ -1450,7 +1400,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-58"
+      "tag": "proxy-57"
     },
     {
       "protocol": "shadowsocks",
@@ -1468,6 +1418,24 @@
       "streamSettings": {
         "network": "tcp"
       },
+      "tag": "proxy-58"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "82.38.31.176",
+            "port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "k1dBOmOB4oqi7Ump37a1bQ",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
       "tag": "proxy-59"
     },
     {
@@ -1475,7 +1443,7 @@
       "settings": {
         "servers": [
           {
-            "address": "193.29.139.198",
+            "address": "82.38.31.178",
             "port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -1583,7 +1551,7 @@
       "settings": {
         "servers": [
           {
-            "address": "82.38.31.193",
+            "address": "82.38.31.194",
             "port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -1601,7 +1569,7 @@
       "settings": {
         "servers": [
           {
-            "address": "82.38.31.198",
+            "address": "82.38.31.195",
             "port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -1613,60 +1581,6 @@
         "network": "tcp"
       },
       "tag": "proxy-67"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.199",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-68"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.201",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-69"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.202",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-70"
     },
     {
       "protocol": "freedom",
