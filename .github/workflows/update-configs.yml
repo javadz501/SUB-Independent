@@ -1,5 +1,5 @@
 
-name: Run Workflow Config-Updater
+name: Run Config-Updater
 
 on:
   schedule:
