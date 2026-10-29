@@ -381,18 +381,8 @@ def main():
     output_file = sys.argv[2]
 
     if not config_settings.ENABLE_XRAY_TESTER:
-        logger.info("Xray testing is disabled in user_settings.py. Skipping.")
-        try:
-            with open(input_file, 'r', encoding='utf-8') as f_in:
-                content = f_in.read()
-            os.makedirs(os.path.dirname(output_file) or '.', exist_ok=True)
-            with open(output_file, 'w', encoding='utf-8') as f_out:
-                f_out.write(content)
-            logger.info(f"Copied {input_file} to {output_file} as testing is disabled.")
-            sys.exit(0)
-        except Exception as e:
-            logger.error(f"Failed to copy {input_file} to {output_file}: {str(e)}")
-            sys.exit(1)
+        logger.error("Xray testing is disabled in user_settings.py; refusing to label untested configs as tested.")
+        sys.exit(2)
 
     max_workers = config_settings.XRAY_TESTER_MAX_WORKERS
     timeout = config_settings.XRAY_TESTER_TIMEOUT_SECONDS
@@ -447,15 +437,8 @@ def main():
         logger.info(f"Saved {len(working)} working configs to {output_file}")
         sys.exit(0)
     else:
-        logger.error("No working configs found - saving original untested configs instead of an empty file")
-        with open(output_file, 'w', encoding='utf-8') as f:
-            for header in header_lines:
-                f.write(header + '\n')
-            if header_lines:
-                f.write('\n')
-            for config in configs:
-                f.write(config + '\n\n')
-        sys.exit(0)
+        logger.error("No working configs found; refusing to write untested input as tested output.")
+        sys.exit(2)
 
 
 if __name__ == '__main__':
