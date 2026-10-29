@@ -1,4 +1,5 @@
-name: Update Proxy Configs
+
+name: Run Workflow Config-Updater
 
 on:
   schedule:
@@ -16,9 +17,6 @@ jobs:
   update-configs:
     runs-on: ubuntu-latest
     timeout-minutes: 120
-    env:
-      PIPELINE_DIR: ${{ runner.temp }}/sub-independent-pipeline
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v7
@@ -144,6 +142,8 @@ jobs:
           set -Eeuo pipefail
           test -f src/fetch_configs.py
           test -f settings/user_settings.py
+          PIPELINE_DIR="$RUNNER_TEMP/sub-independent-pipeline"
+          echo "PIPELINE_DIR=$PIPELINE_DIR" >> "$GITHUB_ENV"
           mkdir -p "$PIPELINE_DIR"
           tar --exclude='./.git' -cf - . | tar -xf - -C "$PIPELINE_DIR"
 
