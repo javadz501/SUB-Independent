@@ -93,12 +93,12 @@
       "settings": {
         "vnext": [
           {
-            "address": "47.253.226.114",
+            "address": "ararat.rtkdvbr.cc",
             "port": 443,
             "users": [
               {
-                "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
-                "flow": "xtls-rprx-vision",
+                "id": "04b7c62b-762e-4a8c-ba37-8328d25c8d74",
+                "flow": "",
                 "encryption": "none",
                 "level": 8
               }
@@ -107,14 +107,21 @@
         ]
       },
       "streamSettings": {
-        "network": "tcp",
-        "security": "reality",
-        "realitySettings": {
-          "serverName": "www.cloudflare.com",
-          "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "password": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
-          "shortId": "",
-          "fingerprint": "chrome"
+        "network": "ws",
+        "security": "tls",
+        "wsSettings": {
+          "path": "/amws",
+          "headers": {
+            "Host": "ararat.rtkdvbr.cc"
+          }
+        },
+        "tlsSettings": {
+          "serverName": "ararat.rtkdvbr.cc",
+          "fingerprint": "edge",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
         }
       },
       "tag": "proxy-2"
@@ -155,6 +162,68 @@
       "settings": {
         "vnext": [
           {
+            "address": "47.253.226.114",
+            "port": 443,
+            "users": [
+              {
+                "id": "055a1ce8-2a16-4a0d-a2c2-22826c9b2413",
+                "flow": "xtls-rprx-vision",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.cloudflare.com",
+          "publicKey": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "password": "Svl81isn16RPAFnjtmYw7A6TPnsEPLHuYYaJht65Rzc",
+          "shortId": "",
+          "fingerprint": "chrome"
+        }
+      },
+      "tag": "proxy-4"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
+            "address": "79.182.39.37",
+            "port": 27591,
+            "users": [
+              {
+                "id": "056405e8-de9f-4d0d-8145-956f13cc34da",
+                "flow": "",
+                "encryption": "none",
+                "level": 8
+              }
+            ]
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "serverName": "www.samsung.com",
+          "publicKey": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "password": "LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM",
+          "shortId": "6c5c7900406a1ae7",
+          "fingerprint": "firefox"
+        }
+      },
+      "tag": "proxy-5"
+    },
+    {
+      "protocol": "vless",
+      "settings": {
+        "vnext": [
+          {
             "address": "65.109.211.81",
             "port": 465,
             "users": [
@@ -186,7 +255,7 @@
           ]
         }
       },
-      "tag": "proxy-4"
+      "tag": "proxy-6"
     },
     {
       "protocol": "vless",
@@ -219,12 +288,63 @@
           "serverName": "hw6.divarkhaghazi.com.",
           "fingerprint": "chrome",
           "alpn": [
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-7"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "169.197.140.218",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "learn.discoverfreshgraduatejobsstartyourprofessionaljourney.com",
+          "fingerprint": "chrome",
+          "alpn": [
             "h2",
             "http/1.1"
           ]
         }
       },
-      "tag": "proxy-5"
+      "tag": "proxy-8"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "170.101.101.53",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.explorecreativejobsandenhanceyourcareerportfolio.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-9"
     },
     {
       "protocol": "trojan",
@@ -250,7 +370,7 @@
           ]
         }
       },
-      "tag": "proxy-6"
+      "tag": "proxy-10"
     },
     {
       "protocol": "trojan",
@@ -276,7 +396,7 @@
           ]
         }
       },
-      "tag": "proxy-7"
+      "tag": "proxy-11"
     },
     {
       "protocol": "trojan",
@@ -302,7 +422,7 @@
           ]
         }
       },
-      "tag": "proxy-8"
+      "tag": "proxy-12"
     },
     {
       "protocol": "trojan",
@@ -328,7 +448,7 @@
           ]
         }
       },
-      "tag": "proxy-9"
+      "tag": "proxy-13"
     },
     {
       "protocol": "trojan",
@@ -354,7 +474,85 @@
           ]
         }
       },
-      "tag": "proxy-10"
+      "tag": "proxy-14"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "208.69.78.19",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.yourultimateprofessionalcareerhub.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-15"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.152.147.89",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "www.connectingpeoplewithgreatjobs.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-16"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.152.155.158",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "resources.nextjobopportunityandclaimyouridealrole.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-17"
     },
     {
       "protocol": "trojan",
@@ -380,7 +578,7 @@
           ]
         }
       },
-      "tag": "proxy-11"
+      "tag": "proxy-18"
     },
     {
       "protocol": "trojan",
@@ -406,7 +604,7 @@
           ]
         }
       },
-      "tag": "proxy-12"
+      "tag": "proxy-19"
     },
     {
       "protocol": "trojan",
@@ -432,7 +630,7 @@
           ]
         }
       },
-      "tag": "proxy-13"
+      "tag": "proxy-20"
     },
     {
       "protocol": "trojan",
@@ -458,7 +656,7 @@
           ]
         }
       },
-      "tag": "proxy-14"
+      "tag": "proxy-21"
     },
     {
       "protocol": "trojan",
@@ -484,7 +682,33 @@
           ]
         }
       },
-      "tag": "proxy-15"
+      "tag": "proxy-22"
+    },
+    {
+      "protocol": "trojan",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.152.156.42",
+            "port": 443,
+            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "serverName": "blog.healthcarejobshubenhancemedicalprofessionalskillstoday.com",
+          "fingerprint": "chrome",
+          "alpn": [
+            "h2",
+            "http/1.1"
+          ]
+        }
+      },
+      "tag": "proxy-23"
     },
     {
       "protocol": "trojan",
@@ -510,7 +734,7 @@
           ]
         }
       },
-      "tag": "proxy-16"
+      "tag": "proxy-24"
     },
     {
       "protocol": "trojan",
@@ -536,7 +760,7 @@
           ]
         }
       },
-      "tag": "proxy-17"
+      "tag": "proxy-25"
     },
     {
       "protocol": "trojan",
@@ -562,7 +786,7 @@
           ]
         }
       },
-      "tag": "proxy-18"
+      "tag": "proxy-26"
     },
     {
       "protocol": "trojan",
@@ -588,7 +812,7 @@
           ]
         }
       },
-      "tag": "proxy-19"
+      "tag": "proxy-27"
     },
     {
       "protocol": "trojan",
@@ -614,7 +838,7 @@
           ]
         }
       },
-      "tag": "proxy-20"
+      "tag": "proxy-28"
     },
     {
       "protocol": "trojan",
@@ -640,7 +864,7 @@
           ]
         }
       },
-      "tag": "proxy-21"
+      "tag": "proxy-29"
     },
     {
       "protocol": "trojan",
@@ -666,7 +890,7 @@
           ]
         }
       },
-      "tag": "proxy-22"
+      "tag": "proxy-30"
     },
     {
       "protocol": "trojan",
@@ -692,33 +916,7 @@
           ]
         }
       },
-      "tag": "proxy-23"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "66.163.114.126",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "resources.findconnectwithemployersandbuildprofessionalnetwork.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-24"
+      "tag": "proxy-31"
     },
     {
       "protocol": "trojan",
@@ -744,7 +942,7 @@
           ]
         }
       },
-      "tag": "proxy-25"
+      "tag": "proxy-32"
     },
     {
       "protocol": "trojan",
@@ -770,14 +968,14 @@
           ]
         }
       },
-      "tag": "proxy-26"
+      "tag": "proxy-33"
     },
     {
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "66.163.114.245",
+            "address": "66.163.114.45",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -788,7 +986,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "findconnectwithemployersandbuildprofessionalnetwork.com",
+          "serverName": "cdn.findconnectwithemployersandbuildprofessionalnetwork.com",
           "fingerprint": "chrome",
           "alpn": [
             "h2",
@@ -796,14 +994,14 @@
           ]
         }
       },
-      "tag": "proxy-27"
+      "tag": "proxy-34"
     },
     {
       "protocol": "trojan",
       "settings": {
         "servers": [
           {
-            "address": "66.163.118.131",
+            "address": "66.163.118.166",
             "port": 443,
             "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
             "level": 8
@@ -814,7 +1012,7 @@
         "network": "tcp",
         "security": "tls",
         "tlsSettings": {
-          "serverName": "www.discovergreatjobsandadvanceyourcareer.com",
+          "serverName": "learn.discovergreatjobsandadvanceyourcareer.com",
           "fingerprint": "chrome",
           "alpn": [
             "h2",
@@ -822,33 +1020,7 @@
           ]
         }
       },
-      "tag": "proxy-28"
-    },
-    {
-      "protocol": "trojan",
-      "settings": {
-        "servers": [
-          {
-            "address": "66.163.118.244",
-            "port": 443,
-            "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp",
-        "security": "tls",
-        "tlsSettings": {
-          "serverName": "api.discovergreatjobsandadvanceyourcareer.com",
-          "fingerprint": "chrome",
-          "alpn": [
-            "h2",
-            "http/1.1"
-          ]
-        }
-      },
-      "tag": "proxy-29"
+      "tag": "proxy-35"
     },
     {
       "protocol": "trojan",
@@ -874,7 +1046,7 @@
           ]
         }
       },
-      "tag": "proxy-30"
+      "tag": "proxy-36"
     },
     {
       "protocol": "trojan",
@@ -900,7 +1072,7 @@
           ]
         }
       },
-      "tag": "proxy-31"
+      "tag": "proxy-37"
     },
     {
       "protocol": "trojan",
@@ -926,7 +1098,7 @@
           ]
         }
       },
-      "tag": "proxy-32"
+      "tag": "proxy-38"
     },
     {
       "protocol": "trojan",
@@ -952,7 +1124,7 @@
           ]
         }
       },
-      "tag": "proxy-33"
+      "tag": "proxy-39"
     },
     {
       "protocol": "trojan",
@@ -978,7 +1150,7 @@
           ]
         }
       },
-      "tag": "proxy-34"
+      "tag": "proxy-40"
     },
     {
       "protocol": "trojan",
@@ -1004,7 +1176,7 @@
           ]
         }
       },
-      "tag": "proxy-35"
+      "tag": "proxy-41"
     },
     {
       "protocol": "shadowsocks",
@@ -1022,7 +1194,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-36"
+      "tag": "proxy-42"
     },
     {
       "protocol": "shadowsocks",
@@ -1040,7 +1212,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-37"
+      "tag": "proxy-43"
     },
     {
       "protocol": "shadowsocks",
@@ -1058,7 +1230,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-38"
+      "tag": "proxy-44"
     },
     {
       "protocol": "shadowsocks",
@@ -1076,7 +1248,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-39"
+      "tag": "proxy-45"
     },
     {
       "protocol": "shadowsocks",
@@ -1094,7 +1266,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-40"
+      "tag": "proxy-46"
     },
     {
       "protocol": "shadowsocks",
@@ -1112,7 +1284,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-41"
+      "tag": "proxy-47"
     },
     {
       "protocol": "shadowsocks",
@@ -1130,17 +1302,17 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-42"
+      "tag": "proxy-48"
     },
     {
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "gr1s.sublinkplas.ir",
-            "port": 53731,
+            "address": "178.253.16.185",
+            "port": 8388,
             "method": "chacha20-ietf-poly1305",
-            "password": "1Pey1iumq-W30iHVnTEERD2n1RFUS_pS",
+            "password": "x2A6AsyZ-rAllz0wbKHzWA",
             "level": 8
           }
         ]
@@ -1148,25 +1320,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-43"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "49.13.206.112",
-            "port": 53731,
-            "method": "chacha20-ietf-poly1305",
-            "password": "1Pey1iumq-W30iHVnTEERD2n1RFUS_pS",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-44"
+      "tag": "proxy-49"
     },
     {
       "protocol": "shadowsocks",
@@ -1184,7 +1338,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-45"
+      "tag": "proxy-50"
     },
     {
       "protocol": "shadowsocks",
@@ -1202,25 +1356,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-46"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "104.239.12.81",
-            "port": 43385,
-            "method": "chacha20-ietf-poly1305",
-            "password": "AwW1fV6oDDQKh8r2znmptv59tPgt4eHVTgFaTqgKS2jiSdikJ7GyGCBYehDaK38S8yMgHFdbJqcTmRJSfYS5CFw345bNhFZa",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-47"
+      "tag": "proxy-51"
     },
     {
       "protocol": "shadowsocks",
@@ -1238,7 +1374,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-48"
+      "tag": "proxy-52"
     },
     {
       "protocol": "shadowsocks",
@@ -1256,7 +1392,25 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-49"
+      "tag": "proxy-53"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "20.87.213.148",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "KpIjwx8W2MbSzezl",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "tag": "proxy-54"
     },
     {
       "protocol": "shadowsocks",
@@ -1274,7 +1428,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-50"
+      "tag": "proxy-55"
     },
     {
       "protocol": "shadowsocks",
@@ -1292,7 +1446,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-51"
+      "tag": "proxy-56"
     },
     {
       "protocol": "shadowsocks",
@@ -1310,7 +1464,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-52"
+      "tag": "proxy-57"
     },
     {
       "protocol": "shadowsocks",
@@ -1328,17 +1482,17 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-53"
+      "tag": "proxy-58"
     },
     {
       "protocol": "shadowsocks",
       "settings": {
         "servers": [
           {
-            "address": "130.49.189.158",
-            "port": 43558,
+            "address": "177.3.93.166",
+            "port": 8388,
             "method": "chacha20-ietf-poly1305",
-            "password": "cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=",
+            "password": "d61ca0c9-c4de-49d7-bccc-ae6ffb3bf0a3",
             "level": 8
           }
         ]
@@ -1346,7 +1500,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-54"
+      "tag": "proxy-59"
     },
     {
       "protocol": "shadowsocks",
@@ -1364,7 +1518,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-55"
+      "tag": "proxy-60"
     },
     {
       "protocol": "shadowsocks",
@@ -1382,7 +1536,25 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-56"
+      "tag": "proxy-61"
+    },
+    {
+      "protocol": "shadowsocks",
+      "settings": {
+        "servers": [
+          {
+            "address": "216.105.168.18",
+            "port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "hCCWOcIsK5wrFz4OX70rWf",
+            "level": 8
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp"
+      },
+      "tag": "proxy-62"
     },
     {
       "protocol": "shadowsocks",
@@ -1400,7 +1572,7 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-57"
+      "tag": "proxy-63"
     },
     {
       "protocol": "shadowsocks",
@@ -1418,114 +1590,6 @@
       "streamSettings": {
         "network": "tcp"
       },
-      "tag": "proxy-58"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.176",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-59"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.178",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-60"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.179",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-61"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.180",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-62"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.181",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-63"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.186",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
       "tag": "proxy-64"
     },
     {
@@ -1533,7 +1597,7 @@
       "settings": {
         "servers": [
           {
-            "address": "82.38.31.189",
+            "address": "193.29.139.198",
             "port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -1551,7 +1615,7 @@
       "settings": {
         "servers": [
           {
-            "address": "82.38.31.194",
+            "address": "193.29.139.223",
             "port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "k1dBOmOB4oqi7Ump37a1bQ",
@@ -1563,24 +1627,6 @@
         "network": "tcp"
       },
       "tag": "proxy-66"
-    },
-    {
-      "protocol": "shadowsocks",
-      "settings": {
-        "servers": [
-          {
-            "address": "82.38.31.195",
-            "port": 8080,
-            "method": "chacha20-ietf-poly1305",
-            "password": "k1dBOmOB4oqi7Ump37a1bQ",
-            "level": 8
-          }
-        ]
-      },
-      "streamSettings": {
-        "network": "tcp"
-      },
-      "tag": "proxy-67"
     },
     {
       "protocol": "freedom",
